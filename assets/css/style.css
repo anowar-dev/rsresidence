@@ -1,0 +1,327 @@
+
+/* =========Global CSS start here===============*/
+body{
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+    transition: .4s;
+}
+body li{
+    list-style: none;
+}
+body a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Color Variables */
+:root{
+    --primary-color: #4AB7F4;
+    --hover-color: #18794E;
+    --primary-black: #222222;
+    --white: #ffffff;
+    --light-black: #747d8c;
+
+    /* Font-Size */
+    --learget-font: 3rem;
+    --mediumSize: 2.2;
+    --subTitle_size: 1.5rem;
+}
+/* =========Global CSS end here===============*/
+
+/* =================Style start =================*/
+/* Header design start */
+.desktop_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.deskMenuButtons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.desktop_menubar .desktopMlist{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: 1.7rem;
+}
+.desktop_mItem .desktopMlink{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #222222;
+    letter-spacing: .8px;
+}
+.desktop_mItem .desktopMlink:hover{
+    color: var(--primary-color);
+}
+.desktopMlink.active{
+    color: var(--primary-color);
+}
+.mLogoLink img{
+    width: 110px;
+}
+.desktop_rightSide{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding-left: 1.6rem;
+    border-left: .1rem solid var(--light-black);
+}
+.desktop_rightSide a i{
+    color: var(--light-black);
+    font-size: 1.1rem;
+}
+.desktop_rightSide a i:hover{
+    color: var(--primary-color);
+}
+.desktop_rightSide a.active{
+    color: var(--primary-color);
+}
+
+/* Sub menu design */
+.desktoplink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .4rem;
+    cursor: pointer;
+}
+.desktoplink span{
+    color: var(--primary-black);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.desktoplink i{
+    color: var(--primary-black);
+}
+.desktoplink:hover span{
+    color: var(--primary-color);
+}
+.desktoplink:hover i{
+    color: var(--primary-color);
+}
+.desktop_mItem{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.deskSubmenu{
+    width: 250px;
+    background: var(--white);
+    border-radius: .5rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+.desktop_mItem:hover .deskSubmenu{
+    display: block;
+}
+.deskSubItem{
+    margin-bottom: 1rem;
+}
+.deskSubItem:last-child{
+    margin-bottom: 0;
+}
+.deskSubItem .desktopSMlink{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-black);
+    line-height: 1.8rem;
+}
+.deskSubItem .desktopSMlink:hover{
+    color: var(--primary-color);
+}
+.desktopSMlink span, i{
+    color: var(--primary-color);
+}
+.deskSubItem{
+    position: relative;
+    padding-right: 1.5rem;
+}
+.desSubMenu2{
+    position: absolute;
+    top: -1.5rem;
+    left: 100%;
+    width: 250px;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    display: none;
+    padding: 1.5rem;
+}
+.deskSubItem:hover .desSubMenu2{
+    display: block;
+}
+.desk_subItem2 .deskSubLink2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-black);
+    line-height: 1.5rem;
+}
+.desk_subItem2{
+    margin-bottom: 1rem;
+}
+.desk_subItem2 .deskSubLink2:last-child{
+    margin-bottom: 0;
+}
+.desk_subItem2 .deskSubLink2:hover{
+    color: var(--primary-color);
+}
+.Mobile_menuOpen{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.Mobile_menuOpen i{
+    color: var(--light-black);
+    font-size: 1.5rem;
+}
+.Mobile_menuOpen i:hover{
+    color: var(--primary-color);
+}
+/* Header design end */
+/* Mobile menu design start */
+.offcanvas-header .OCHC{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 1rem;
+    width: 100%;
+}
+.offcanvas-header .OCHC img{
+    width: 100px;
+}
+.mobileMenuClose{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.mobileMenuClose i{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+.mobileMenuClose:hover i{
+    color: var(--primary-color);
+}
+.MobileMlist{
+    padding-left: .5rem;
+    margin-left: 0;
+}
+.MobileMlist .Mobile_mItem{
+    margin-bottom: 1rem;
+}
+.MobileMlist .Mobile_mItem:last-child{
+    margin-bottom: 0;
+}
+.Mobile_mItem .MobileMlink{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-black);
+    line-height: 1.5rem;
+}
+.Mobile_mItem .MobileMlink:hover{
+    color: var(--primary-color);
+}
+.MobileSubmenu{
+    padding-left: 1rem;
+    overflow: hidden;
+    height: 0;
+    transition: all 5s ease-in-out;
+}
+.MobileSubmenu.height-fits{
+    height: fit-content;
+}
+
+.MobileSubMenu2{
+    padding-left: 1rem;
+}
+.Mobilelink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .4rem;
+    cursor: pointer;
+}
+.Mobilelink span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--primary-black);
+}
+.Mobilelink i{
+    color: var(--primary-black);
+}
+.Mobilelink:hover span{
+    color: var(--primary-color);
+}
+.Mobilelink:hover i{
+    color: var(--primary-color);
+}
+.MobileSMlink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.MobileSMlink span{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--primary-black);
+}
+.MobileSMlink i{
+    color: var(--primary-black);
+}
+.MobileSMlink:hover span{
+    color: var(--primary-color);
+}
+.MobileSMlink:hover i{
+    color: var(--primary-color);
+}
+.MobileSMlink{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--primary-black);
+}
+.MobileSMlink:hover{
+    color: var(--primary-color);
+}
+.MobileSubLink2{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--primary-black);
+}
+.Mobile_subItem2{
+    margin-top: 1rem;
+}
+.MobileSubLink2:hover{
+    color: var(--primary-color);
+}
+.MobileSubMenu2{
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.MobileSubMenu2.height-fits{
+    height: 210px;
+    
+}
+
+/* Mobile menu design end */
