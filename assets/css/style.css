@@ -14,6 +14,9 @@ body a{
 html{
     scroll-behavior: smooth;
 }
+img{
+    max-width: 100%;
+}
 
 /* Color Variables */
 :root{
@@ -27,6 +30,32 @@ html{
     --learget-font: 3rem;
     --mediumSize: 2.2;
     --subTitle_size: 1.5rem;
+}
+
+/* Titles */
+.title{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    color: var(--white);
+}
+
+/* BTNS */
+.primary_btn{
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    border-radius: .2rem;
+    padding: .9rem 2rem;
+    letter-spacing: .5px;
+    transition: .4s;
+}
+.primary_btn:hover{
+    background: var(--hover-color);
 }
 /* =========Global CSS end here===============*/
 
@@ -320,8 +349,140 @@ html{
     transition: all 1s ease-in-out;
 }
 .MobileSubMenu2.height-fits{
-    height: 210px;
-    
+    height: 210px;   
+}
+.header_user.active i{
+    color: var(--primary-color);
+}
+.header_card.active i{
+    color: var(--primary-color);
 }
 
 /* Mobile menu design end */
+
+/* SLIder section start */
+.header_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.topSliderSection{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+.sicgle_slider{
+    display: none;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+}
+.sicgle_slider img{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -4rem;
+}
+
+.indicators{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    z-index: 111;
+    transform: translateY(-50%);
+}
+.indic{
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    opacity: .6;
+    cursor: pointer;
+}
+.sicgle_slider.z-indexing{
+    display: block;
+}
+.indic:hover{
+    opacity: 1;
+}
+.indic.active{
+    opacity: 1;
+}
+.sicgle_slider .slider_data{
+    margin-top: 25%;
+    position: relative;
+}
+.bgLightSlider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+.borderDiv{
+    width: 25rem;
+    height: 0.2rem;
+    background: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.sliderparagraph{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 3rem;
+    width: 55%;
+    letter-spacing: .7px;
+}
+.sliderChanging{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 2222;
+    pointer-events: none;
+}
+.sliderChanging .sliderIndicate{
+    z-index: 22222;
+    pointer-events: painted;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.sliderIndicate i{
+    color: var(--white);
+    font-size: 1.8rem;
+    transition: .4s;
+}
+.sliderChanging .sliderIndicate:hover{
+    opacity: .6;
+}
+.bgBlackSlider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    transition: all .5s;
+    z-index: 222222222222;
+}
+.z-indexing .bgBlackSlider{
+    width: 0;
+    opacity: .2;
+}
+
+
+/* Slider section end */
