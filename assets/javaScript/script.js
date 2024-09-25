@@ -125,4 +125,34 @@ $(document).ready(function() {
       $(".header_section").removeClass('scrolled');
     }
   });
+
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > 50) {
+      $(".backTop").show();
+    } else {
+      $(".backTop").hide();
+    }
+  });
+
+  // Sidebar product close
+  $(".cProductClose").click(function(){
+    $(this).closest(".SCPsingleMain").hide();
+  });
+
+
+  // Sitebar show hide
+  $(".SaddToCard").click(function(e){
+    e.preventDefault();
+    $(".sidebarcardMain").show();
+    setTimeout(() => {
+      $(".sidebarCard").css({transform: "translateX(0)"});
+    }, 10);
+  });
+  $(".sCardHeader").click(function(){
+    $(".sidebarCard").css({transform: "translateX(100%)"});
+    setTimeout(() => {
+      $(".sidebarcardMain").hide();
+    }, 410);
+  });
+
 });
