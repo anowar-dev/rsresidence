@@ -126,6 +126,24 @@ $(document).ready(function() {
       }, 6000); 
     }
   
+    $(window).on("scroll", function(){
+      if($(window).scrollTop() >10){
+        $(".header_section").css({background: "#ffffff", padding: "0"});
+        $(".desktop_mItem .desktopMlink").css({color: "#222222"});
+        $(".desktoplink span").css({color: "#222222"});
+        $(".desktoplink i").css({color: "#222222"});
+        $(".desktop_rightSide a i").css({color: "#747d8c"});
+        $(".desktop_rightSide").css({borderColor: "#747d8c"});
+      }
+      else{
+        $(".header_section").css({background: "transparent", padding: "1rem 0"});
+        $(".desktop_mItem .desktopMlink").css({color: "#ffffff"});
+        $(".desktoplink span").css({color: "#ffffff"});
+        $(".desktoplink i").css({color: "#ffffff"});
+        $(".desktop_rightSide a i").css({color: "#ffffff"});
+        $(".desktop_rightSide").css({borderColor: "#ffffff"});
+      }
+    });
   
   });
   

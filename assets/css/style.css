@@ -28,7 +28,7 @@ img{
 
     /* Font-Size */
     --learget-font: 3rem;
-    --mediumSize: 2.2;
+    --mediumSize: 2.2rem;
     --subTitle_size: 1.5rem;
 }
 
@@ -39,7 +39,11 @@ img{
     line-height: 4.5rem;
     color: var(--white);
 }
-
+.sub_title{
+    font-size: var(--mediumSize);
+    font-weight: 600;
+    color: var(--primary-black);
+}
 /* BTNS */
 .primary_btn{
     font-size: 1.1rem;
@@ -85,7 +89,7 @@ img{
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #222222;
+    color: var(--white);
     letter-spacing: .8px;
 }
 .desktop_mItem .desktopMlink:hover{
@@ -103,10 +107,10 @@ img{
     align-items: center;
     column-gap: 1.5rem;
     padding-left: 1.6rem;
-    border-left: .1rem solid var(--light-black);
+    border-left: .1rem solid var(--white);
 }
 .desktop_rightSide a i{
-    color: var(--light-black);
+    color: var(--white);
     font-size: 1.1rem;
 }
 .desktop_rightSide a i:hover{
@@ -125,13 +129,13 @@ img{
     cursor: pointer;
 }
 .desktoplink span{
-    color: var(--primary-black);
+    color: var(--white);
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.8rem;
 }
 .desktoplink i{
-    color: var(--primary-black);
+    color: var(--white);
 }
 .desktoplink:hover span{
     color: var(--primary-color);
@@ -367,6 +371,8 @@ img{
     left: 0;
     width: 100%;
     z-index: 999999;
+    transition: all .4s ease;
+    padding: 1rem 0;
 }
 .topSliderSection{
     position: relative;
@@ -485,4 +491,62 @@ img{
 }
 
 
+
 /* Slider section end */
+
+/* Success section start */
+.titleParagraph{
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--primary-black);
+}
+.titleParagraph .TPlink{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .4s;
+    font-weight: 600;
+    margin-left: 0.2rem;
+}
+.titleParagraph .TPlink:hover{
+    color: var(--hover-color);
+}
+.sectionTitle{
+    width: 100%;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.successBody{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1%;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    
+}
+.successSection{
+    background: var(--white);
+    padding: 3.5rem 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.successSingle{
+    width: 24%;
+    text-align: center;
+}
+.successSingle i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.successSingle span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-black);
+}
+/* Success section end */
