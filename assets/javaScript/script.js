@@ -48,102 +48,81 @@ $(document).ready(function() {
     localStorage.removeItem('activeIndex');
   });
 
-    
-    $(".MobileSMlink").click(function(){
-      $(this).next(".MobileSubMenu2").toggleClass("height-fits");
-    });
-    
-    $(".Mobilelink").click(function(){
-      $(this).next(".MobileSubmenu").toggleClass("height-fits");
-    });
+  // Handle click event for .desktopSMlink or .deskSubLink2
+  $('.desktopSMlink, .deskSubLink2').click(function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    $('.desktopMlink, .desktoplink').removeClass('active'); // Remove active class from all menu links
 
+    // Add active class to the parent .desktoplink
+    $(this).closest('.desktop_mItem').find('.desktoplink').addClass('active');
+  });
 
-    // Top slider
-    {
-      let currentIndex = 0;
-      const sliders = $('.sicgle_slider');
-      const totalSliders = sliders.length;
-
-      // Function to change slider
-      function changeSlider(nextIndex) {
-          // Remove z-indexing from current slider
-          sliders.eq(currentIndex).removeClass('z-indexing');
-          
-          // Add z-indexing to next slider
-          currentIndex = nextIndex;
-          sliders.eq(currentIndex).addClass('z-indexing');
-          
-          // Update indicator
-          $('.indic').removeClass('active');
-          $('.indic').eq(currentIndex).addClass('active');
-          setTimeout(() => {
-            $(".z-indexing .sliderparagraph").css({visibility: 'visible'});
-          }, 500);
-          setTimeout(() => {
-            $(".z-indexing .sliderparagraph").css({marginTop: '0'});
-          }, 1000);
-      }
-
-      // Click on the next button
-      $('.Tslider-next').click(function() {
-          nextSlider();
-      });
-
-      // Click on the previous button
-      $('.Tslider-prev').click(function() {
-          prevSlider();
-      });
-
-      // Click on indicators
-      $('.indic').click(function() {
-          const indicatorIndex = $(this).index();
-          if (indicatorIndex !== currentIndex) {
-              changeSlider(indicatorIndex);
-          }
-      });
-
-      // Function to go to the next slider
-      function nextSlider() {
-          let nextIndex = currentIndex + 1;
-          if (nextIndex >= totalSliders) {
-              nextIndex = 0;  // Loop back to the first slider
-          }
-          changeSlider(nextIndex);
-      }
-
-      // Function to go to the previous slider
-      function prevSlider() {
-          let prevIndex = currentIndex - 1;
-          if (prevIndex < 0) {
-              prevIndex = totalSliders - 1;  // Loop to the last slider
-          }
-          changeSlider(prevIndex);
-      }
-
-      // Auto change slider every 2 seconds
-      setInterval(function() {
-          nextSlider();
-      }, 6000); 
-    }
-  
-    $(window).on("scroll", function(){
-      if($(window).scrollTop() >10){
-        $(".header_section").css({background: "#ffffff", padding: "0"});
-        $(".desktop_mItem .desktopMlink").css({color: "#222222"});
-        $(".desktoplink span").css({color: "#222222"});
-        $(".desktoplink i").css({color: "#222222"});
-        $(".desktop_rightSide a i").css({color: "#747d8c"});
-        $(".desktop_rightSide").css({borderColor: "#747d8c"});
-      }
-      else{
-        $(".header_section").css({background: "transparent", padding: "1rem 0"});
-        $(".desktop_mItem .desktopMlink").css({color: "#ffffff"});
-        $(".desktoplink span").css({color: "#ffffff"});
-        $(".desktoplink i").css({color: "#ffffff"});
-        $(".desktop_rightSide a i").css({color: "#ffffff"});
-        $(".desktop_rightSide").css({borderColor: "#ffffff"});
-      }
-    });
-  
+  // Handle sub-menu toggles for mobile
+  $(".MobileSMlink").click(function(){
+    $(this).next(".MobileSubMenu2").toggleClass("height-fits");
   });
   
+  $(".Mobilelink").click(function(){
+    $(this).next(".MobileSubmenu").toggleClass("height-fits");
+  });
+
+  // Top slider logic
+  {
+    let currentIndex = 0;
+    const sliders = $('.sicgle_slider');
+    const totalSliders = sliders.length;
+
+    // Function to change slider
+    function changeSlider(nextIndex) {
+        sliders.eq(currentIndex).removeClass('z-indexing');
+        currentIndex = nextIndex;
+        sliders.eq(currentIndex).addClass('z-indexing');
+        $('.indic').removeClass('active');
+        $('.indic').eq(currentIndex).addClass('active');
+        setTimeout(() => {
+          $(".z-indexing .sliderparagraph").css({visibility: 'visible'});
+        }, 500);
+        setTimeout(() => {
+          $(".z-indexing .sliderparagraph").css({marginTop: '0'});
+        }, 1000);
+    }
+
+    // Handle slider navigation
+    $('.Tslider-next').click(function() { nextSlider(); });
+    $('.Tslider-prev').click(function() { prevSlider(); });
+    $('.indic').click(function() {
+      const indicatorIndex = $(this).index();
+      if (indicatorIndex !== currentIndex) {
+          changeSlider(indicatorIndex);
+      }
+    });
+
+    // Function to go to the next slider
+    function nextSlider() {
+      let nextIndex = currentIndex + 1;
+      if (nextIndex >= totalSliders) { nextIndex = 0; }
+      changeSlider(nextIndex);
+    }
+
+    // Function to go to the previous slider
+    function prevSlider() {
+      let prevIndex = currentIndex - 1;
+      if (prevIndex < 0) { prevIndex = totalSliders - 1; }
+      changeSlider(prevIndex);
+    }
+
+    // Auto change slider every 6 seconds
+    setInterval(function() {
+      nextSlider();
+    }, 6000); 
+  }
+
+  // Change header appearance on scroll
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() > 10) {
+      $(".header_section").addClass('scrolled');
+    } else {
+      $(".header_section").removeClass('scrolled');
+    }
+  });
+});

@@ -98,6 +98,15 @@ img{
 .desktopMlink.active{
     color: var(--primary-color);
 }
+.scrolled .desktopMlink{
+    color: var(--primary-black);
+}
+.scrolled .desktopMlink:hover{
+    color: var(--primary-color);
+}
+.scrolled .desktopMlink.active{
+    color: var(--primary-color);
+}
 .mLogoLink img{
     width: 110px;
 }
@@ -109,9 +118,15 @@ img{
     padding-left: 1.6rem;
     border-left: .1rem solid var(--white);
 }
+.scrolled .desktop_rightSide{
+    border-color: var(--light-black);
+}
 .desktop_rightSide a i{
     color: var(--white);
     font-size: 1.1rem;
+}
+.scrolled .desktop_rightSide a i{
+    color: var(--light-black);
 }
 .desktop_rightSide a i:hover{
     color: var(--primary-color);
@@ -128,11 +143,23 @@ img{
     column-gap: .4rem;
     cursor: pointer;
 }
+.desktoplink.active i{
+    color: var(--primary-color);
+}
+.desktoplink.active span{
+    color: var(--primary-color);
+}
+.scrolled .desktoplink.active span{
+    color: var(--primary-color);
+}
 .desktoplink span{
     color: var(--white);
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.8rem;
+}
+.scrolled .desktoplink span{
+    color: var(--primary-black);
 }
 .desktoplink i{
     color: var(--white);
@@ -373,6 +400,11 @@ img{
     z-index: 999999;
     transition: all .4s ease;
     padding: 1rem 0;
+}
+.header_section.scrolled{
+    background: var(--white);
+    padding: 0;
+    border-bottom: 1px solid #ddd;
 }
 .topSliderSection{
     position: relative;
