@@ -27,7 +27,7 @@ $(document).ready(function() {
   // Handle click event for .header_user (user icon)
   $('.header_user').click(function() {
     // Remove active class from all links and icons
-    $('.desktopMlink, .header_user, .header_card').removeClass('active');
+    $('.desktopMlink, .header_user, .desktoplink, .header_card').removeClass('active');
     
     // Add active class to the user icon
     $(this).addClass('active');
@@ -39,7 +39,7 @@ $(document).ready(function() {
   // Handle click event for .header_card (shopping cart icon)
   $('.header_card').click(function() {
     // Remove active class from all links and icons
-    $('.desktopMlink, .header_user, .header_card').removeClass('active');
+    $('.desktopMlink, .header_user, .desktoplink, .header_card').removeClass('active');
     
     // Add active class to the cart icon
     $(this).addClass('active');

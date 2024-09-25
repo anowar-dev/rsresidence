@@ -164,6 +164,9 @@ img{
 .desktoplink i{
     color: var(--white);
 }
+.scrolled .desktoplink i{
+    color: var(--primary-black);
+}
 .desktoplink:hover span{
     color: var(--primary-color);
 }
@@ -385,7 +388,13 @@ img{
 .header_user.active i{
     color: var(--primary-color);
 }
+.scrolled .header_user.active i{
+    color: var(--primary-color);
+}
 .header_card.active i{
+    color: var(--primary-color);
+}
+.scrolled .header_card.active i{
     color: var(--primary-color);
 }
 
