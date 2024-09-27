@@ -155,4 +155,56 @@ $(document).ready(function() {
     }, 410);
   });
 
+
+  // Home calender
+
+  {
+    $('#homeCalender').bsCalendar({
+      locale: 'en',
+      url: null,
+      width: 'fit',
+      icons: {
+        prev: 'fa-solid fa-arrow-left fa-fw',
+        next: 'fa-solid fa-arrow-right fa-fw',
+        eventEdit: 'fa-solid fa-edit fa-fw',
+        eventRemove: 'fa-solid fa-trash fa-fw'
+      },
+      showTodayHeader: false,
+      showEventEditButton: true,
+      showEventRemoveButton: true,
+      showPopover: false
+    });
+
+    $(".timeBtn").click(function(){
+      $(".timeBoxSingle").removeClass("next");
+      $(this).closest(".timeBoxSingle").addClass("next");
+    });
+
+    $(".timeNextBtn").click(function(){
+      $(this).closest(".consultationCalenderDiv").hide();
+      $(".appointmentMain").show();
+    });
+    $("td.position-relative.p-1").click(function(){
+      $(".calenderOverlay").hide();
+    });
+    $("td.position-relative.p-1").css({cursor: "pointer"});
+    $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-bg-primary");
+    $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").click(function(){
+      $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("bg-primary");
+      $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-white");
+      $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-white");
+      $(this).addClass("bg-primary");
+      $(this).addClass("text-white");
+      $(this).removeClass("border-secondary");
+    });
+
+    $(".appointmentSubmitBtn").click(function(e){
+      e.preventDefault();
+      $(".appointmentMain").hide();
+      $(".consultConfirm_main").show();
+    });
+
+  }
+
+
 });
