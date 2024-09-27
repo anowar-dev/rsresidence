@@ -1189,3 +1189,50 @@ img{
 }
 
 /* Consultation section end */
+
+/* Client Testimonial start */
+.clientTestmonialSection{
+    padding: 4rem 0;
+    background: linear-gradient(45deg, var(--primary-color), #00d2d3);
+}
+
+.reviewerInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.reviewerImg{
+    width: 6rem;
+}
+.reviewerImg img{
+    border-radius: 50%;
+}
+.reviewerName{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.reviewerPosition{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--hover-color);
+}
+.clientTestimonialSingle .paragraph{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 1rem;
+}
+.slick-arrow{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    color: transparent;
+}
+.slick-arrow:before {
+    font-size: 2.2rem; 
+    color: var(--white);
+    box-shadow: transparent;
+}
+/* Slient testimonial end */
