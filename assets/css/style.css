@@ -1348,3 +1348,114 @@ img{
     margin-right: 0.2rem;
 }
 /* contactSection design end */
+
+/* footerSection section start */
+.footerSection{
+    background: #000000;
+}
+.footertop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding: 4rem 0;
+}
+.footerTleft{
+    width: 11rem;
+}
+.footerTleft img{
+    width: 100%;
+}
+
+.footerTright{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2rem;
+}
+.footerRsingle i{
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-right: 0.4rem;
+}
+.footerRsingle .footerNumber{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    transition: .4s ease;
+    letter-spacing: .5px;
+}
+.footerRsingle .footerNumber:hover{
+    color: var(--primary-color);
+}
+
+.socialSingle i{
+    font-size: .8rem;
+    color: var(--white);
+    background: var(--primary-color);
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    transition: .4s ease;
+}
+.socialSingle i:hover{
+    background: var(--hover-color);
+}
+.footerMiddle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2%;
+}
+.fiiterMiddleSingle{
+    width: 32%;
+}
+.fiiterMiddleSingle:last-child{
+    width: fit-content;
+    margin-left: auto;
+}
+.fiiterMiddleSingle:last-child img{
+    max-width: 15rem;
+}
+.fiiterMiddleSingle:nth-child(2){
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerTitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+.fiiterMiddleSingle .footerLinks{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+    display: block;
+    transition: .4s ease;
+    letter-spacing: .5px;
+}
+.fiiterMiddleSingle .footerLinks:hover{
+    color: var(--primary-color);
+}
+.footerBcontent{
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #685A51;
+    margin-bottom: -2rem;
+}
+.footerBcontent a{
+    color: var(--hover-color);
+    transition: .4s ease;
+}
+.footerBcontent a:hover{
+    color: var(--primary-color);
+}
+/* footerSection section end */
