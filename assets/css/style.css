@@ -471,6 +471,9 @@ img{
     height: 800px;
     overflow: hidden;
 }
+.topSliderSection.singlepage{
+    height: 30rem;
+}
 .sicgle_slider{
     display: none;
     transition: .5s;
@@ -514,13 +517,32 @@ img{
     margin-top: 25%;
     position: relative;
 }
+.slider_data.singlepage{
+    margin-top: 15%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider_data.singlepage .borderDiv{
+    margin-top: 0;
+    height: 2px;
+    width: 100%;
+}
 .bgLightSlider{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .5);
+}
+.bgLightSlider.singlepage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
 }
 .borderDiv{
     width: 25rem;
@@ -1458,4 +1480,98 @@ img{
 .footerBcontent a:hover{
     color: var(--primary-color);
 }
+
 /* footerSection section end */
+
+/* ============== About Us Page design start ================ */
+/* CEO section */
+.ceo_section{
+    padding: 4rem;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+    position: relative;
+}
+.ceo_left .paragraph{
+    text-align: justify;
+}
+.blue_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.oneSocial{
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    transition: .4s ease;
+    background: var(--primary-color);
+    border-radius: .2rem;
+}
+.oneSocial i{
+    color: var(--white);
+    font-size: .9rem;
+}
+.oneSocial:hover{
+    background: var(--hover-color);
+}
+.whyus_inner_top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    column-gap: 1rem;
+}
+.whyus_inner_top i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.sub_title4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-black);
+    line-height: 1.6rem;
+}
+.mission_section{
+    background: var(--white);
+    border-top: 2px solid rgba(0, 0, 0, .1);
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+.whyus_section{
+    background: var(--white);
+    border-top: 2px solid rgba(0, 0, 0, .1);
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+.team_single{
+    padding: 1.5rem;
+    box-shadow: 0 0 2px var(--primary-color);
+}
+.team_single .team_top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+.team_top img{
+    width: 9rem;
+    border: 1px solid var(--primary-color);
+}
+.team_name_title .team_name{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-black);
+}
+.team_position{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--paragraph-black);
+    text-transform: uppercase;
+}
+.team_single .paragraph{
+    text-align: justify;
+}
+/* ============== About Us Page design end ================ */
