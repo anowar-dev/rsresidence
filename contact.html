@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residency Success</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS (CDN) -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+
+     <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+    <!-- Custom css -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    
+
+    <!-- Header section -->
+     <section class="header_section">
+        <div class="container">
+            <!-- Desktop header -->
+            <div class="desktop_header">
+                <div class="logosection">
+                    <a href="index.html" class="mLogoLink">
+                        <img src="./assets/images/logo/Blue.png" alt="Logo">
+                    </a>
+                </div>
+                
+                <!-- Menu and buttons -->
+                <div class="deskMenuButtons">
+                    <div class="desktop_menubar d-none d-lg-block">
+                        <ul class="desktopMlist">
+                            <li class="desktop_mItem">
+                                <a href="index.html" class="desktopMlink active">Home</a>
+                            </li>
+                            <li class="desktop_mItem">
+                                <a href="about-us.html" class="desktopMlink">About Us</a>
+                            </li>
+                            <li class="desktop_mItem">
+                                <div class="desktoplink">
+                                    <span>Services</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+
+                                <!-- Submenu -->
+                                <ul class="deskSubmenu">
+                                    <li class="deskSubItem">
+                                        <div class="desktopSMlink">
+                                            <span>Residency Match</span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+
+                                        <!-- Submenu Inner -->
+                                        <ul class="desSubMenu2">
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Match Application Review & Strategy</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Curriculum Vitae Review</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Personal Statement Review</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Interview Preparation</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Additional Services</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="deskSubItem">
+                                        <a href="#" class="desktopSMlink subLinkD">Mentorship Plans</a>
+                                    </li>
+                                    <li class="deskSubItem">
+                                        <a href="#" class="desktopSMlink subLinkD">USMLE Tutoring</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="desktop_mItem">
+                                <a href="contact.html" class="desktopMlink">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desktop_rightSide">
+                        <a href="#" class="header_user"><i class="fa-regular fa-circle-user"></i></a>
+                        <a href="#" class="header_card"><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button class="Mobile_menuOpen d-lg-none" data-bs-target="#mobileOffCanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Mobile header -->
+             <div class="mobile_header offcanvas offcanvas-start" id="mobileOffCanvas">
+                <div class="offcanvas-header">
+                    <div class="OCHC">
+                        <a href="index.html" class="mobileLogoTop">
+                            <img src="./assets/images/logo/Blue.png" alt="Logo">
+                        </a>
+                        <button class="mobileMenuClose" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu body -->
+                <div class="offcanvas-body">
+                    <ul class="MobileMlist">
+                        <li class="Mobile_mItem">
+                            <a href="index.html" class="MobileMlink">Home</a>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <a href="about-us.html" class="MobileMlink">About Us</a>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <div class="Mobilelink">
+                                <span>Services</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <!-- Submenu -->
+                            <ul class="MobileSubmenu">
+                                <li class="MobileSubItem">
+                                    <div class="MobileSMlink">
+                                        <span>Residency Match</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+
+                                    <!-- Submenu Inner -->
+                                    <ul class="MobileSubMenu2">
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Match Application Review & Strategy</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Curriculum Vitae Review</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Personal Statement Review</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Interview Preparation</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Additional Services</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="MobileSubItem">
+                                    <a href="#" class="MobileSMlink">Mentorship Plans</a>
+                                </li>
+                                <li class="MobileSubItem">
+                                    <a href="#" class="MobileSMlink">USMLE Tutoring</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <a href="contact.html" class="MobileMlink">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+     </section>
+
+
+    <!-- Slider section -->
+     <section class="topSliderSection singlepage">
+
+        <!-- Slider single -->
+        <div class="sliderResidency sicgle_slider z-indexing">
+            <img src="./assets/images/TopSliderInner/contact.jpg" alt="">
+            <div class="bgLightSlider singlepage"></div>
+            <div class="container">
+                <div class="slider_data singlepage">
+                    <h1 class="title">Contact</h1>
+                    <div class="borderDiv"></div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+
+
+    
+    <!-- Contact form section -->
+     <section class="contact_form_section">
+        <div class="container">
+            <div class="contact_form_main">
+                <h2 class="sub_title text-center mb-4 mb-lg-5">Contact us</h2>
+                <div class="contact_form_inner">
+                    <p class="paragraph">Schedule A Free Consultation Call With Our Client Relations Team* To Discuss If Residency Success Can Support You During Your MATCH Journey.</p>
+                    <p class="boldParagraph">* Please complete the form below so that we know how to best assist you during the call.</p>
+                    <form action="#" class="contact_form">
+                        <div class="name_email_div">
+                            <div class="single">
+                                <label for="cName" class="contact_form_label">Your Name <span>*</span></label>
+                                <input class="cSmallInput" type="text" id="cName" required>
+                            </div>
+                            <div class="single">
+                                <label for="cEmail" class="contact_form_label">Email Address <span>*</span></label>
+                                <input class="cSmallInput" type="email" id="cEmail" required>
+                            </div>
+                        </div>
+                        <div class="name_email_div">
+                            <div class="single">
+                                <label for="cMobile" class="contact_form_label">Phone</label>
+                                <input class="cSmallInput" type="tel" id="cMobile">
+                            </div>
+                            <div class="single">
+                                <label for="cSchool" class="contact_form_label">Medical School</label>
+                                <input class="cSmallInput" type="text" id="cSchool">
+                            </div>
+                        </div>
+                        
+                        <label class="contact_form_label" for="cAbout">What do you need to help with?</label>
+                        <select class="cInputFull" id="cAbout">
+                            <option value="1" selected>Select Your Choice</option>
+                            <option value="2">MATCH Application Review & Strategy</option>
+                            <option value="3">Curriculum Vitae Review</option>
+                            <option value="4">Personal Statement Review</option>
+                            <option value="5">Interview Preparation</option>
+                            <option value="6">Mentorship Plans</option>
+                            <option value="7">USMLE Tutoring</option>
+                            <option value="8">Additional Services</option>
+                            <option value="9">MSPE</option>
+                            <option value="10">ERAS</option>
+                            <option value="11">Letter of Recommendation</option>
+                            <option value="12">Letter of Intern</option>
+                            <option value="13">Plutinam Plan</option>
+                            <option value="14">Basic Plan</option>
+                        </select>
+                        <label class="contact_form_label" for="cHelp">How do you hear about us?</label>
+                        <select class="cInputFull" id="cHelp">
+                            <option value="1" selected>Select Your Choice</option>
+                            <option value="2">Google Search</option>
+                            <option value="3">Client Referral</option>
+                            <option value="4">Instagram</option>
+                            <option value="5">Facebook</option>
+                            <option value="6">Research Update</option>
+                            <option value="7">Bookly USCE</option>
+                            <option value="8">Linkedin</option>
+                            <option value="9">Other</option>
+                        </select>
+                        <label for="cTextarea" class="contact_form_label">How can we help you?</label>
+                        <textarea id="cTextarea"></textarea>
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        <button class="primary_btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Contact bottom -->
+     <section class="contact_bottom">
+        <div class="container">
+            <div class="contact_bottom_inner">
+                <div class="cMobileDiv">
+                    <div class="cMobile">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call us</span>
+                        <a href="tel: +1-917-524-8067" class="cNumberCall">+1-917-524-8067</a>
+                    </div>
+                    <div class="cMobile">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Mail us</span>
+                        <a href="mailto: Info@mibpromotions.com" class="cNumberCall">Info@mibpromotions.com</a>
+                    </div>
+                </div>
+                <div class="cSocialDiv text-center my-5">
+                    <h2 class="sub_title">Let's get social!</h2>
+                    <div class="footerSocialInner">
+                        <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    
+
+    <!-- Footer Section -->
+     <section class="footerSection">
+        <div class="container">
+            <div class="footerMain">
+
+                <!-- Footer Top -->
+                <div class="footertop">
+                    <div class="footerTleft">
+                        <img src="./assets/images/logo/Blue.png" alt="">
+                    </div>
+                    <div class="footerTright">
+                        <div class="footerRsingle">
+                            <i class="fa-solid fa-headphones"></i>
+                            <a href="tel: +1-917-524-8067" class="footerNumber">+1-917-524-8067</a>
+                        </div>
+                        <div class="footerRsingle">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: Info@mibpromotions.com" class="footerNumber">Info@mibpromotions.com</a>
+                        </div>
+                        <div class="footerRsingle footerSocials">
+                            <div class="footerSocialInner">
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer middle -->
+                <div class="footerMiddle">
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Services</h4>
+                        <a href="#" class="footerLinks">Match Application Review & Strategy</a>
+                        <a href="#" class="footerLinks">Curriculum Vitae Review</a>
+                        <a href="#" class="footerLinks">Personal Statement Review</a>
+                        <a href="#" class="footerLinks">Interview Preparation</a>
+                        <a href="#" class="footerLinks">Additional Services</a>
+                        <a href="#" class="footerLinks">Mentorship Plans</a>
+                    </div>
+
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Quick Links</h4>
+                        <a href="#" class="footerLinks">Home</a>
+                        <a href="about-us.html" class="footerLinks">About Us</a>
+                        <a href="#" class="footerLinks">Services</a>
+                        <a href="#" class="footerLinks">Our Partners</a>
+                        <a href="contact.html" class="footerLinks">Contact Us</a>
+                        <a href="#" class="footerLinks">FAQs</a>
+                        <a href="#" class="footerLinks">Sign Up</a>
+                    </div>
+
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Packages</h4>
+                        <a href="#" class="footerLinks">Basic Plan</a>
+                        <a href="#" class="footerLinks">Platinum Plan</a>
+                        <a href="#" class="footerLinks">Platinum Plus</a>
+                        <img src="./assets/images/singleSection/secure-stripe-payment.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footertop">
+                    <p class="footerBcontent">© Residency Success – 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Back to top -->
+     <a href="#" class="backTop">
+        <i class="fa-solid fa-arrow-up"></i>
+     </a>
+
+    <!--========= All js references =========-->
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <!-- Calender js -->
+     <script src="./assets/javaScript/jquery.bs.calendar.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <!-- Custom javaScript -->
+     <script src="./assets/javaScript/script.js"></script>
+</body>
+</html>
