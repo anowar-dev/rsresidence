@@ -23,6 +23,7 @@ img{
     --primary-color: #4AB7F4;
     --hover-color: #18794E;
     --primary-black: #222222;
+    --paragraph-black: #2f2f2f;
     --white: #ffffff;
     --light-black: #747d8c;
 
@@ -60,6 +61,12 @@ img{
     font-weight: 700;
     color: var(--primary-black);
     transition: .4s;
+}
+.paragraph{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--paragraph-black);
+    letter-spacing: .4px;
 }
 .smallText{
     font-size: 0.95rem;
@@ -637,9 +644,6 @@ img{
 /* Success section end */
 
 /* SErvices section start */
-.services_section{
-    padding: 5rem 0;
-}
 
 .servicesImg{
     position: relative;
@@ -920,7 +924,6 @@ img{
 
 /* Consultation section start */
 .consultation_section{
-    padding: 5rem 0;
     position: relative;
     overflow: hidden;
     border-top: 1px solid rgba(0, 0, 0, .1);
@@ -1192,7 +1195,6 @@ img{
 
 /* Client Testimonial start */
 .clientTestmonialSection{
-    padding: 4rem 0;
     background: linear-gradient(45deg, var(--primary-color), #00d2d3);
 }
 
@@ -1236,3 +1238,113 @@ img{
     box-shadow: transparent;
 }
 /* Slient testimonial end */
+
+/* Achievement section start */
+.sectionPadding{
+    padding: 5.2rem 0;
+}
+.achievementSection{
+    background: #F5F5F5;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+.achievementMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+}
+.achievementLeft{
+    width: 43%;
+}
+.achievementRight{
+    width: 53%;
+}
+.achievementRight img{
+    width: 100%;
+}
+.Achievparagraph{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #5d656f;
+    letter-spacing: .6px;
+    line-height: 2rem;
+}
+.achievementInnerC{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 2rem;
+}
+.achievementIsingle{
+    width: 48%;
+}
+.achievementIsingle .ASTcontent{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.ASTcontent i{
+    margin-right: 0.3rem;
+}
+.achievementIsingle .ASBdata{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-black);
+    margin-top: 0.2rem;
+}
+/* Achievement section End  */
+
+/* contactSection design start */
+.contactSection{
+    background: #F5F5F5;
+}
+.contactSection .contactMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+}
+.contactMain .contactLeft{
+    width: 53%;
+}
+.contactLeft img{
+    width: 100%;
+}
+.contactRight{
+    width: 43%;
+}
+.contactRightInner{
+    width: 100%;
+    max-width: 28rem;
+    margin: auto;
+}
+.contactTitle{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-black);
+    letter-spacing: .5px;
+    line-height: 2rem;
+}
+.contactNumberLink{
+    font-size: 1.8rem;
+}
+.contactNumber i{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-right: 0.3rem;
+}
+.contactNumber{
+    margin-bottom: 1.8em;
+    margin-top: .8rem;
+}
+.contactRightInner .primary_btn i{
+    color: var(--white);
+}
+.contactRightInner .primary_btn span{
+    color: var(--white);
+    font-size: 0.9rem;
+    margin-right: 0.2rem;
+}
+/* contactSection design end */
