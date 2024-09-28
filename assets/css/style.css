@@ -1466,11 +1466,11 @@ img{
     color: var(--primary-color);
 }
 .footerBcontent{
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 800;
     letter-spacing: .4px;
     text-transform: uppercase;
-    color: #685A51;
+    color: var(--hover-color);
     margin-bottom: -2rem;
 }
 .footerBcontent a{
