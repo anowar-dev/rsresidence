@@ -1,0 +1,392 @@
+@import url("style.css");
+
+
+/* ========= Max width 1200px =========== */
+@media (max-width: 1200px) {
+    /* Augth page */
+    .aught_single{
+        padding: 1rem 0 1rem .5rem;
+    }
+    .aught_single.login{
+        padding: 1rem .5rem 1rem 0;
+    } 
+
+
+    /* Homed page for 1200px */
+    .ceo_right iframe{
+        height: 15.2rem;
+    }
+    .consultationBody{
+        padding: 2rem 1rem 2rem 2px;
+    }
+    .footerTleft{
+        width: 10rem;
+        margin-right: auto;
+    }
+    .footerTright{
+        column-gap: 1rem;
+    }
+    
+}
+
+/* ======== Max width =========== 922px */
+@media (max-width: 992px) {
+    
+    /* home page for 992px */
+    .topSliderSection{
+        height: 45rem;
+    }
+    .indicators{
+        left: 56.5%;
+        transform: translateX(-50%);
+        top: 78%;
+        display: flex;
+        column-gap: .5rem;
+    }
+    .indic{
+        width: 1rem;
+        height: 1rem;
+        overflow: hidden;
+        border-radius: 50%;
+        background: black;
+        background: var(--white);
+    }
+    .sicgle_slider .slider_data{
+        text-align: center;
+    }
+    .sliderparagraph{
+        width: 100%;
+    }
+    .borderDiv{
+        margin: 2rem auto;
+        width: 23rem;
+    }
+    .successSection{
+        padding: 2rem 0 3rem 0;
+        box-shadow: 0 0 50px 110px var(--white);
+    }
+    .desktop_rightSide{
+        border-left: none;
+    }
+    .successSingle{
+        width: 32%;
+    }
+    .achievementMain{
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .achievementRight, .achievementLeft{
+        width: 100%;
+    }
+    .achievementIsingle{
+        text-align: center;
+    }
+    .contactSection .contactMain{
+        flex-direction: column-reverse;
+    }
+    .contactMain .contactLeft{
+        width: 100%;
+    }
+    .contactRight{
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .footertop{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .footerTright{
+        margin-right: auto;
+    }
+
+    /* About us page for 992px */
+    .ceo_inner{
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+    }
+    .ceo_right iframe{
+        height: 20rem;
+    }
+    .ceo_inner.vission{
+        flex-direction: column;
+    }
+    .ceo_section, .contact_form_section{
+        padding: 2rem 0 4rem 0;
+        box-shadow: 0 0 50px 110px var(--white);
+    }
+}
+
+/* ============= Max width 767px ============ */
+
+@media (max-width: 768px) {
+
+    /* home page for 767px */
+    .successSingle{
+        width: 49%;
+    }
+    .consultationBody{
+        padding: 2rem 2px;
+    }
+    .consultationCalenderDiv{
+        flex-direction: column;
+    }
+    .calenderInnerDate, .calenderInnerTime{
+        width: 100%;
+    }
+    .p-2.js-collapse{
+        position: unset;
+    }
+    .calenderInnerTime{
+        margin-top: 2rem;
+    }
+    .topSliderSection{
+        height: 41rem;
+    }
+    .indicators{
+        top: 76%;
+    }
+    .footerTright{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .footerRsingle{
+        margin-right: auto;
+    }
+    .footerMiddle{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .footerLinks{
+        width: 100%;
+        white-space: nowrap;
+    }
+    .fiiterMiddleSingle:nth-child(2){
+        margin-left: 0;
+    }
+    .fiiterMiddleSingle:last-child{
+        margin-left: 0;
+    }
+
+    /* Conttact page for 768px */
+    .sectionDevider {
+        box-shadow: 0 0 50px 100px var(--white);
+    }
+    .aught_section{
+        padding: 3rem 0;
+    }
+    .aught_single{
+        padding: 0 .2rem;
+    }
+    .aught_single.login{
+        padding: 0 .5rem;
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
+    }
+    .slider_data.singlepage{
+        margin-top: 30%;
+    }
+    .topSliderSection.singlepage{
+        height: 27rem;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .sub_title{
+        font-size: 1.9rem;
+    }
+    .primary_btn{
+        font-size: 1rem;
+        padding: 0.7rem 1.8rem;
+    }
+    .borderDiv{
+        margin: 1.5rem auto;
+        width: 21rem;
+    }
+    .sliderparagraph{
+        font-size: 1.35rem;
+    }
+    .titleParagraph{
+        font-size: 1.1rem;
+    }
+    .sub_title2{
+        font-size: 1.3rem;
+    }
+    .sub_title3{
+        font-size: 1.6rem;
+    }
+    .sectionPadding{
+        padding: 4rem 0;
+    }
+    .consultTopInner{
+        padding: 1.5rem 0;
+    }
+}
+
+/* ============ Max width 576px ============= */
+@media (max-width: 576px) {
+    .borderDiv{
+        margin: 1.2rem auto;
+        width: 20rem;
+    }
+    .sliderparagraph{
+        margin-bottom: 2rem;
+    }
+    .clientTestimonialInner.testimonialSlider.row.slick-initialized.slick-slider{
+        max-width: 100%;
+    }
+    .slick-next::before{
+        margin-right: .5rem;
+        z-index: 999;
+    }
+    .slick-prev::before{
+        margin-left: 1.8rem;
+        z-index: 999;
+    }
+    .sectionPadding{
+        padding: 3rem 0;
+    }
+
+    .achievementIsingle .ASTcontent{
+        font-size: 1.6rem;
+    }
+    .achievementIsingle .ASBdata{
+        font-size: 1.1rem;
+    }
+    .sectionDevider {
+        box-shadow: 0 0 50px 120px var(--white);
+    }
+    .aught_section{
+        padding: 0 0 3rem 0;
+    }
+    .blue_title{
+        font-size: 1.1rem;
+    }
+    .sub_title4{
+        font-size: 1.4rem;
+    }
+    .paragraph{
+        font-size: 1rem;
+    }
+    .whyus_inner_top i{
+        font-size: 1.8rem;
+    }
+    .team_name_title .team_name{
+        font-size: 1.7rem;
+    }
+    .team_position{
+        font-size: 1rem;
+    }
+    .team_top img{
+        width: 8rem;
+    }
+    .name_email_div {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .name_email_div .single{
+        width: 100%;
+    }
+}
+
+/* Max width 520px */
+@media (max-width: 520px) {
+    .ceo_right iframe {
+        height: 17rem;
+    }
+}
+
+/* Max width 480px */
+@media (max-width: 480px) {
+
+    .augth_form_inner{
+        padding: 1.5rem .5rem;
+    }
+    .topSliderSection{
+        height: 35rem;
+    }
+    .indicators{
+        top: 74%;
+    }
+    .successSection {
+        padding: 0rem 0 3rem 0;
+    }
+    .successBody{
+        margin-top: 4rem;
+    }
+    .successSingle span{
+        font-size: 1.1rem;
+    }
+    .successSingle{
+        width: 100%;
+    }
+    .contactTitle{
+        font-size: 1.3rem;
+    }
+    .ceo_section, .contact_form_section {
+        padding: 0 0 3rem 0;
+    }
+    .ceo_right{
+        margin-bottom: -1.4rem;
+    }
+    .cMobileDiv{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .contact_form_main{
+        padding: 1.5em 1rem;
+    }
+    .borderDiv {
+        margin: .5rem auto;
+        width: 18rem;
+    }
+    .title {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .sliderparagraph {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .indicators {
+        top: 70%;
+    }
+    .sub_title {
+        font-size: 1.85rem;
+    }
+    .slider_data.singlepage {
+        margin-top: 35%;
+    }
+    .ceo_right iframe {
+        height: 15rem;
+    }
+}
+
+/* Max width 420px */
+@media (max-width: 420px) {
+    .sicgle_slider .slider_data {
+        margin-top: 35%;
+        position: relative;
+    }
+    .topSliderSection.singlepage {
+        height: 25rem;
+    }
+    .ceo_right iframe {
+        height: 13rem;
+    }
+}
+
+/* Max width 370px */
+@media (max-width: 370px) {
+    .sicgle_slider .slider_data {
+        margin-top: 40%;
+        position: relative;
+    }
+    .topSliderSection.singlepage {
+        height: 24rem;
+    }
+    .ceo_right iframe {
+        height: 12rem;
+    }
+}

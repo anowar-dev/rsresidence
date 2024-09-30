@@ -213,7 +213,7 @@ $(document).ready(function() {
       slidesToScroll: 1,
       responsive: [
           {
-              breakpoint: 576,
+              breakpoint: 992,
               settings: {
                   slidesToShow: 1
               }
@@ -222,5 +222,4 @@ $(document).ready(function() {
     });
   }
 
-  
 });
