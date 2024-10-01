@@ -222,6 +222,10 @@
     .consultTopInner{
         padding: 1.5rem 0;
     }
+    .product_details_section{
+        padding-top: 2rem 0 5rem 0;
+        box-shadow: 0 0 50px 110px var(--white);
+    }
 }
 
 /* ============ Max width 576px ============= */

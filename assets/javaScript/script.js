@@ -50,7 +50,6 @@ $(document).ready(function() {
 
   // Handle click event for .desktopSMlink or .deskSubLink2
   $('.desktopSMlink, .deskSubLink2').click(function(e) {
-    e.preventDefault(); // Prevent default link behavior
     $('.desktopMlink, .desktoplink').removeClass('active'); // Remove active class from all menu links
 
     // Add active class to the parent .desktoplink
@@ -209,6 +208,21 @@ $(document).ready(function() {
   // Testimonial slider
   {
     $('.testimonialSlider').slick({
+      slidesToShow: 2, 
+      slidesToScroll: 1,
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 1
+              }
+          }
+      ]
+    });
+
+  }
+  {
+    $('.othersServiceSlider').slick({
       slidesToShow: 2, 
       slidesToScroll: 1,
       responsive: [

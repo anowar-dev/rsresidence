@@ -1785,3 +1785,40 @@ img{
     margin-bottom: .4rem;
 }
 /* ============= Augth page design end =========== */
+
+/* =========== Product details start here ============*/
+.product_details_section{
+    padding: 5rem 0;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+    position: relative;
+}
+.pd_highlight{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+.pBoldText{
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--hover-color);
+}
+.pd_highlight i{
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    font-weight: 900;
+    color: var(--hover-color);
+}
+.pSmallHihlight{
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: -52%;
+    color: var(--hover-color);
+}
+.product_description_section{
+    background: var(--white);
+}
+/* ============ Product details end here =========== */
