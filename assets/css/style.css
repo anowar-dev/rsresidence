@@ -1787,6 +1787,7 @@ img{
 /* ============= Augth page design end =========== */
 
 /* =========== Product details start here ============*/
+
 .product_details_section{
     padding: 5rem 0;
     background: var(--white);
@@ -1822,3 +1823,180 @@ img{
     background: var(--white);
 }
 /* ============ Product details end here =========== */
+
+/* ================ Mentorship plan start =============== */
+.mentor_choose_section{
+    position: relative;
+    padding: 5rem 0;
+    box-shadow: 0 0 50px 70px var(--white);
+    background: var(--white);
+}
+.mentor_choose_single{
+    box-shadow: 0 0 2px rgba(0, 64, 255, 0.362);
+    width: 32%;
+    border-radius: .3rem;
+}
+.mentor_choose_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2%;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+.mentor_single_header{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--white);
+    padding: 1.25rem;
+    border-radius: .3rem .3rem 0 0;
+    background: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+.basic .mentor_single_header{
+    background: rgba(0, 0, 0, .5);
+}
+.advence .mentor_single_header{
+    background: var(--hover-color);
+}
+.mentor_single_body{
+    border-radius: 0 0 .3rem .3rem;
+}
+.mentor_single_body{
+    background: rgba(0, 0, 0, .04);
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+.mentorship_price{
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: 1rem auto;
+    padding-top: 1rem;
+}
+.mentorship_price b{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-black);
+}
+.mentorship_price span{
+    font-size: .95rem;
+    color: var(--paragraph-black);
+    position: absolute;
+    bottom: -.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    white-space: nowrap;
+}
+.mentorship_price i{
+    font-size: 1.1rem;
+    position: absolute;
+    font-weight: 900;
+    top: 2rem;
+    left: -.7rem;
+    color: var(--primary-black);
+}
+.mentor_service_list{
+    padding: 1rem;
+    margin-left: 0;
+}
+.mentor_service_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 0;
+    column-gap: .5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.mentor_service_item i{
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+.mentor_service_item span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--light-black);
+}
+.basic .mentor_service_item{
+    border-color: rgba(0, 0, 0, .3);
+}
+.basic .mentor_service_item i{
+    color: rgba(0, 0, 0, .5);
+}
+.plutinam .mentor_service_item{
+    border-color: var(--primary-color);
+}
+.plutinam .mentor_service_item i{
+    color: var(--primary-color);
+}
+.advence .mentor_service_item{
+    border-color: var(--hover-color);
+}
+.advence .mentor_service_item i{
+    color: var(--hover-color);
+}
+.primary_btn.planSubmit{
+    width: fit-content;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.notePara{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .6);
+    font-style: italic;
+    letter-spacing: .6px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.notePara b{
+    color: var(--primary-black);
+    font-weight: 700;
+}
+.notePara a{
+    color: var(--primary-color);
+    transition: .4s ease;
+    font-weight: 700;
+}
+.notePara a:hover{
+    color: var(--hover-color);
+}
+/* ================ Mentorship plan end =============== */
+
+
+/* Inner page top slider img */
+.productDetails{
+    background: url('../images/TopSliderInner/matchApplication.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contactPageSlider{
+    background: url('../images/TopSliderInner/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.augthPageSlider{
+    background: url('../images/TopSliderInner/img001-45-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.AboutPageSlider{
+    background: url('../images/TopSliderInner/aboutus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mentorPageSlider{
+    background: url('../images/TopSliderInner/mentor.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
