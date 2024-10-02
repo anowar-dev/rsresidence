@@ -2014,6 +2014,60 @@ img{
 }
 /* ================ Mentorship plan end =============== */
 
+/* =========== faqs_section design start ============= */
+.faqs_section{
+    padding: 4rem 0;
+    background: var(--white);
+    position: relative;
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.faqsBtn.accordion-button:not(.collapsed){
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+}
+.faqsBtn.accordion-button{
+    border: none;
+    box-shadow: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: .4s ease;
+    color: var(--primary-black);
+    padding: 1.5rem 1rem;
+}
+.faqsBtn.accordion-button:hover{
+    color: var(--primary-color);
+}
+.faqsAC_body .paragraph a{
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: .4s ease;
+}
+.faqsAC_body .paragraph a:hover{
+    color: var(--hover-color);
+}
+.faqsBtn.accordion-button:not(.collapsed)::after{
+    margin-top: .5rem;
+}
+.faqsBtn.accordion-button::after{
+    background-image: unset;
+    content: "\25be";
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+}
+.faqsList{
+    padding-left: 1rem;
+}
+.faqsItemInner{
+    list-style: disc;
+    margin-bottom: 0.6rem;
+}
+.faqsContact{
+    padding: 5rem 0;
+}
+/* =========== faqs_section design end =========== */
+
 
 /* Inner page top slider img */
 .productDetails{
@@ -2048,6 +2102,12 @@ img{
 }
 .servicesTop{
     background: url('../images/TopSliderInner/img001-23-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.faqsSlider{
+    background: url('../images/TopSliderInner/faq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

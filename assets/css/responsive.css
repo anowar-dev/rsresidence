@@ -126,6 +126,9 @@
     .mentor_choose_single{
         width: 100%;
     }
+    .faqsContact{
+        padding: 0;
+    }
 }
 
 /* ============= Max width 767px ============ */
