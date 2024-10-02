@@ -120,7 +120,7 @@
     }
     .ceo_section, .contact_form_section{
         padding: 2rem 0 4rem 0;
-        box-shadow: 0 0 50px 110px var(--white);
+        box-shadow: 0 0 50px 70px var(--white);
     }
 
     .mentor_choose_single{
@@ -181,7 +181,7 @@
 
     /* Conttact page for 768px */
     .sectionDevider {
-        box-shadow: 0 0 50px 100px var(--white);
+        box-shadow: 0 0 50px 70px var(--white);
     }
     .aught_section{
         padding: 3rem 0;
@@ -236,16 +236,16 @@
     }
     .product_details_section{
         padding-top: 2rem 0 5rem 0;
-        box-shadow: 0 0 50px 110px var(--white);
+        box-shadow: 0 0 50px 70px var(--white);
     }
-    .mentor_choose_section{
+    .servicesPageSection, .mentor_choose_section{
         padding: 4rem 0;
     }
 }
 
 /* ============ Max width 576px ============= */
 @media (max-width: 576px) {
-    .mentor_choose_section{
+    .servicesPageSection, .mentor_choose_section{
         padding: 3rem 0;
     }
     .borderDiv{
@@ -277,7 +277,7 @@
         font-size: 1.1rem;
     }
     .sectionDevider {
-        box-shadow: 0 0 50px 120px var(--white);
+        box-shadow: 0 0 50px 70px var(--white);
     }
     .aught_section{
         padding: 0 0 3rem 0;
@@ -314,6 +314,15 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
+    .name_and_email{
+        flex-direction: column;
+    }
+    .nameEmailInnerFree{
+        width: 100%;
+    }
+    .principle_bigText{
+        font-size: 4rem;
+    }
     .ceo_right iframe {
         height: 17rem;
     }
@@ -324,7 +333,7 @@
 
 /* Max width 480px */
 @media (max-width: 480px) {
-    .mentor_choose_section{
+    .servicesPageSection, .mentor_choose_section{
         padding: 2rem 0;
     }
 
@@ -353,7 +362,7 @@
         font-size: 1.3rem;
     }
     .ceo_section, .contact_form_section {
-        padding: 0 0 3rem 0;
+        padding: 2rem 0 3rem 0;
     }
     .ceo_right{
         margin-bottom: -1.4rem;
@@ -422,5 +431,8 @@
     }
     .title{
         font-size: 2rem;
+    }
+    .principle_bigText{
+        font-size: 3rem;
     }
 }
