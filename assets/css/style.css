@@ -2068,6 +2068,136 @@ img{
 }
 /* =========== faqs_section design end =========== */
 
+/* Partner page design start */
+.partnerTop_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2rem;
+}
+.partnerTop_img{
+    width: 30rem;
+}
+.partnerTop_data{
+    width: calc(100% - 2rem);
+}
+.partnerTop_data .paragraph{
+    letter-spacing: .6px;
+    color: rgba(0, 0, 0, .7);
+    text-align: justify;
+    line-height: 1.7rem;
+}
+.partner_topSection{
+    background: var(--white);
+    padding: 5rem 0;
+    position: relative;
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.partner_topSection2{
+    background: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    position: relative;
+}
+.partner_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-black);
+    line-height: 1.8rem;
+}
+.partner_title span{
+    color: var(--primary-color);
+}
+.partner_valueMain .partner_single{
+    border: 1px solid rgba(0, 0, 0, .12);
+    height: 17rem;
+}
+.partner_valueMain .partner_single img{
+    height: 10rem;
+    min-height: 10rem;
+}
+.combo_plan_single{
+    box-shadow: 0 0 2px #4aa7f48b;
+    border-radius: .4rem;
+}
+.combo_plan_title{
+    border-radius: .4rem .4rem 0 0;
+    padding: 1.2rem;
+    background: var(--primary-color);
+}
+.planTitles{
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--white);
+    margin-bottom: 0;
+    letter-spacing: .5px;
+}
+
+.basic .combo_plan_title{
+    background: rgba(0, 0, 0, .5);
+}
+.advence .combo_plan_title{
+    background: var(--hover-color);
+}
+.small_btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: .4rem;
+    transition: .4s ease;
+}
+.combo_body_bottom{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.advence.combo_body_bottom{
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.same.combo_body_bottom{
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.small_btn:hover{
+    background: var(--hover-color);
+}
+
+.combo_planBody{
+    height: 30rem;
+    padding: 1.2rem;
+    background: #F5F5F5;
+    position: relative;
+}
+.combo_body_bottom{
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    width: calc(100% - 2.4rem);
+}
+.services_inner_list{
+    padding-left: 0;
+}
+.services_inner_item{
+    list-style: disc;
+    margin-bottom: 1rem;
+}
+.servicer_inner_single img{
+    height: 10rem;
+    display: block;
+}
+.services_inner_section{
+    border-top: 1px solid rgba(0, 0, 0, .12);
+}
+.contactSection.partnersection{
+    padding: 5rem 0;
+}
+/* Partner page design end */
+
 
 /* Inner page top slider img */
 .productDetails{
@@ -2076,7 +2206,7 @@ img{
     background-size: cover;
     background-position: center;
 }
-.contactPageSlider{
+.partnerPageSlider, .contactPageSlider{
     background: url('../images/TopSliderInner/contact.jpg');
     background-repeat: no-repeat;
     background-size: cover;

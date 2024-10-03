@@ -1,5 +1,14 @@
 @import url("style.css");
 
+/* Max width 1400px  */
+@media (max-width: 1400px) {
+    .combo_planBody{
+        height: 32rem;
+    }
+    .same .combo_planBody{
+        height: 30.2rem;
+    }
+}
 
 /* ========= Max width 1200px =========== */
 @media (max-width: 1200px) {
@@ -38,6 +47,39 @@
 
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
+    
+    /* partner section */
+    .partner_topSection{
+        padding: 4rem 0;
+    }
+    .partnerTop_main{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .partnerTop_img{
+        width: 100%;
+        max-width: 25rem;
+    }
+    .partnerTop_data{
+        width: 100%;
+    }
+    .combo_planBody{
+        height: unset;
+        margin-bottom: 2.5rem;
+    }
+    .combo_body_bottom{
+        position: unset;
+    }
+    .same .combo_planBody{
+        height: unset;
+    }
+    .servicer_inner_single{
+        text-align: justify;
+        margin-bottom: 3rem;
+    }
+    .contactSection.partnersection{
+        padding: unset;
+    }
     
     /* home page for 992px */
     .topSliderSection{
@@ -134,6 +176,10 @@
 /* ============= Max width 767px ============ */
 
 @media (max-width: 768px) {
+
+    .partner_topSection{
+        padding: 3rem 0;
+    }
 
     /* home page for 767px */
     .successSingle{
@@ -317,6 +363,9 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
+    .partner_topSection{
+        padding: 2rem 0;
+    }
     .name_and_email{
         flex-direction: column;
     }
