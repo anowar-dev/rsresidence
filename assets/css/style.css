@@ -2274,7 +2274,7 @@ img{
     border-color: var(--primary-color);
 }
 .cart_total_inner{
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     border-radius: .3rem;
     background: #F5F5F5;
     box-shadow: 0 0 2px var(--primary-color);
@@ -2298,6 +2298,200 @@ img{
     transition: .4s ease;
 }
 /* cart page design end */
+
+/* checkout_section design start */
+.checkout_section{
+    position: relative;
+    padding: 5rem 0;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.checkoutAH.accordion-button{
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    transition: .4s ease;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: .5px;
+    width: fit-content;
+    background: transparent;
+}
+.checkoutAH.accordion-button:hover{
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+.accordion-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+}
+.checkoutCouponSubmit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.checkoutCouponSubmit .small_btn{
+    border: none;
+    width: 140px;
+}
+.checkoutCouponSubmit input{
+    width: calc(100% - 156px);
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, .12);
+    transition: .4s ease;
+    outline-color: var(--primary-color);
+    border-radius: .4rem;
+}
+.checkoutCouponSubmit input:hover{
+    border-color: var(--primary-color);
+}
+.accordion-header .ahTitle{
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: .5px;
+}
+.checkout.accordion-item{
+    border: none;
+}
+.checkoutAH.accordion-button:not(.collapsed){
+    background: transparent;
+}
+.checkoutAH.accordion-button::after{
+    background-image: unset;
+}
+#accordionCheckoutCoupon .accordion-body{
+    background: #F5F5F5;
+    margin-top: 1.2rem;
+}
+#accordionCheckoutCoupon{
+    transition: .4s ease;
+}
+.appliedCoupon{
+    display: none;
+    transition: .4s ease;
+}
+.appliedCouponInner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+}
+.appliedCouponInner span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--paragraph-black);
+}
+.appliedCouponInner .codes{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-black);
+}
+.deliveriInfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.checkout_left{
+    width: calc(100% - 27rem);
+}
+.checkout_right{
+    width: 25rem;
+    background: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 2px var(--primary-color);
+}
+.desliveryName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+}
+.dVNmaneSimgle{
+    width: 48%;
+}
+.checkout_left label{
+    display: block;
+    font-size: 1rem;
+}
+.checkout_left input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 1.5rem;
+    transition: .4s ease;
+    outline-color: var(--primary-color);
+}
+.choices[data-type*=select-one] .choices__inner:hover{
+    border-color: var(--primary-color);
+}
+.choices[data-type*=select-one] .choices__inner{
+    outline-color: var(--primary-color);
+    transition: .4s ease;
+    border-radius: .4rem;
+}
+.dvCreateCheck{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .6rem;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.dvCreateCheck input{
+    width: fit-content;
+}
+.dvCreateCheck span{
+    transition: .4s ease;
+    font-weight: 500;
+}
+.checkout_rightBodered{
+    padding-top: .5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+.checkout_rightBodered span{
+    display: block;
+    margin-bottom: .5rem;
+}
+.normalText{
+    font-weight: 600;
+    color: var(--primary-black);
+}
+.checkout.accordion-item{
+    background: transparent;
+}
+.dvCreateCheck span:hover{
+    color: var(--primary-color);
+}
+.checkout_left input:hover{
+    border-color: var(--primary-color);
+}
+.paymentMethodLabel span{
+    color: var(--paragraph-black);
+    transition: .4s ease;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.checkout_right .small_btn{
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin-top: 1rem;
+}
+.paymentMethodLabel span:hover{
+    color: var(--primary-color);
+}
+/* checkout_section design end */
 
 /* Inner page top slider img */
 .productDetails{
@@ -2344,6 +2538,12 @@ img{
 }
 .cartPaleSlider{
     background: url('../images/TopSliderInner/cart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.checkoutPageSlider{
+    background: url('../images/TopSliderInner/checkout.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -4,6 +4,12 @@ $(document).ready(function(){
         itemSelectText: '', // Remove the default 'Press to select' text
         placeholderValue: 'Select a country...', // Add a placeholder
     });
+    var countrySearch = new Choices('#dvState', {
+        searchEnabled: true, // Enable live search
+        itemSelectText: '', // Remove the default 'Press to select' text
+        placeholderValue: 'Select a country...', // Add a placeholder
+    });
+    
 
     $(".freeConsulBtn").click(function(e){
         e.preventDefault();

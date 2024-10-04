@@ -59,11 +59,17 @@
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
 
+    .deliveriInfo{
+        flex-direction: column;
+    }
+    .checkout_right, .checkout_left{
+        width: 100%;
+    }
     .cart_right{
         margin-top: unset;
         margin-left: 0;
     }
-    .cart_section{
+    .checkout_section, .cart_section{
         padding: 4rem 0;
     }
     
@@ -195,8 +201,14 @@
 /* ============= Max width 767px ============ */
 
 @media (max-width: 768px) {
+    .desliveryName{
+        flex-direction: column;
+    }
+    .dVNmaneSimgle{
+        width: 100%;
+    }
 
-    .cart_section, .partner_topSection{
+    .checkout_section, .cart_section, .partner_topSection{
         padding: 3rem 0;
     }
 
@@ -382,8 +394,31 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
-    .cart_section, .partner_topSection{
+    .checkout_section, .cart_section, .partner_topSection{
         padding: 2rem 0;
+    }
+    .accordion-header.checkout{
+        flex-direction: column;
+    }
+    .accordion-header .ahTitle{
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        text-align: left;
+        margin-right: auto;
+    }
+    .checkoutAH.accordion-button{
+        margin-right: auto;
+    }
+    .checkoutCouponSubmit{
+        flex-direction: column;
+    }
+    .checkoutCouponSubmit input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .checkoutCouponSubmit .small_btn{
+        width: fit-content;
+        margin-left: auto;
     }
     .cupponSubmit{
         margin-bottom: 1rem;
