@@ -2199,6 +2199,106 @@ img{
 /* Partner page design end */
 
 
+/* Cart page design start */
+.cart_section{
+    padding: 5rem 0;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+    position: relative;
+}
+.cart_main{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: flex-start;
+}
+.cart_left{
+    width: calc(100% - 27rem);
+    overflow-x: auto;
+}
+.cart_table_div{
+    overflow: auto;
+    width: 100%;
+}
+.cart_table{
+    min-width: 40rem;
+}
+.cart_right{
+    width: 25rem;
+    max-width: 100%;
+}
+.product_data_firstColumn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2rem;
+}
+.product_data_firstColumn img{
+    width: 5rem;
+}
+.cart_product_title{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.5rem;
+    transition: .4s ease;
+}
+.cart_product_title:hover{
+    color: var(--hover-color);
+}
+.cartProductClose{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.cartProductClose i{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    transition: .4s ease;
+}
+.cartProductClose i:hover{
+    color: var(--hover-color);
+}
+.cupponSubmit{
+    padding: 0.8rem;
+    outline-color: var(--hover-color);
+    transition: .4s ease;
+    margin-right: 1rem;
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.cupponSubmit:hover{
+    border-color: var(--primary-color);
+}
+.cart_total_inner{
+    padding: 1rem 1.5rem;
+    border-radius: .3rem;
+    background: #F5F5F5;
+    box-shadow: 0 0 2px var(--primary-color);
+}
+.cartLightText{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .6);
+}
+.cart_total_bottom{
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(0, 0, 0, .12);
+}
+.cart_bold{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--paragraph-black);
+}
+.cartProductRow{
+    transition: .4s ease;
+}
+/* cart page design end */
+
 /* Inner page top slider img */
 .productDetails{
     background: url('../images/TopSliderInner/matchApplication.jpg');
@@ -2238,6 +2338,12 @@ img{
 }
 .faqsSlider{
     background: url('../images/TopSliderInner/faq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cartPaleSlider{
+    background: url('../images/TopSliderInner/cart.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

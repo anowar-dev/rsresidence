@@ -12,6 +12,17 @@
 
 /* ========= Max width 1200px =========== */
 @media (max-width: 1200px) {
+
+    .cart_left{
+        width: 100%;
+    }
+    .cart_main{
+        flex-direction: column;
+    }
+    .cart_right{
+        margin-left: auto;
+        margin-top: -5rem;
+    }
     /* Augth page */
     .aught_single{
         padding: 1rem 0 1rem .5rem;
@@ -47,6 +58,14 @@
 
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
+
+    .cart_right{
+        margin-top: unset;
+        margin-left: 0;
+    }
+    .cart_section{
+        padding: 4rem 0;
+    }
     
     /* partner section */
     .partner_topSection{
@@ -177,7 +196,7 @@
 
 @media (max-width: 768px) {
 
-    .partner_topSection{
+    .cart_section, .partner_topSection{
         padding: 3rem 0;
     }
 
@@ -363,8 +382,11 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
-    .partner_topSection{
+    .cart_section, .partner_topSection{
         padding: 2rem 0;
+    }
+    .cupponSubmit{
+        margin-bottom: 1rem;
     }
     .name_and_email{
         flex-direction: column;

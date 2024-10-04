@@ -182,25 +182,78 @@
 
 
     <!-- Slider section -->
-     <section class="topSliderSection singlepage">
+    <section class="topSliderSection singlepage cartPaleSlider">
 
         <!-- Slider single -->
         <div class="sliderResidency sicgle_slider z-indexing">
             <div class="bgLightSlider singlepage"></div>
             <div class="container">
                 <div class="slider_data singlepage">
-                    <h1 class="title">Contact</h1>
+                    <h1 class="title">Cart</h1>
                     <div class="borderDiv"></div>
                 </div>
             </div>
         </div>
 
+    </section>
+
+    <!-- Cart section -->
+     <section class="cart_section">
+        <div class="container">
+            <div class="cart_main">
+                <div class="cart_left">
+                    <div class="cart_table_div">
+                        <table class="cart_table table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cartProductRow">
+                                    <td class="py-2 py-lg-3">
+                                        <div class="product_data_firstColumn">
+                                            <button class="cartProductClose">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                            <img src="./assets/images/servises/51-gettyimages.jpg" alt="">
+                                            <a href="index.html#services" class="cart_product_title">Match Application Review & Strategy</a>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 py-lg-3">$300</td>
+                                    <td class="py-2 py-lg-3">1</td>
+                                    <td class="py-2 py-lg-3">$300</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form action="#" class="appliCuponForm mt-2">
+                        <input type="text" class="cupponSubmit" placeholder="Coupon code">
+                        <button class="primary_btn">Apply coupon</button>
+                    </form>
+                </div>
+                <div class="cart_right">
+                    <div class="cart_total_inner">
+                        <h3 class="sub_title4 mb-3 mb-lg-4">Cart totals</h3>
+                        <h5 class="cartLightText">Subtotal</h5>
+                        <span class="cartPrice">$300</span>
+                        <div class="cart_total_bottom">
+                            <h3 class="cartLightText">Total</h3>
+                            <h3 class="cart_bold">$300</h3>
+                            <a href="checkout.html" class="mt-2 mt-lg-3 text-center primary_btn w-100 d-block">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
      </section>
 
-    
-
     <!-- Footer Section -->
-     <section class="footerSection">
+     <section class="footerSection position-relative">
         <div class="container">
             <div class="footerMain">
 
@@ -298,5 +351,6 @@
 
     <!-- Extra js -->
     <script src="./assets/javaScript/extra.js"></script>
+    <script src="./assets/javaScript/modal.js"></script>
 </body>
 </html>
