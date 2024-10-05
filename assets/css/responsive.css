@@ -69,7 +69,7 @@
         margin-top: unset;
         margin-left: 0;
     }
-    .checkout_section, .cart_section{
+    .passwordresetsection, .checkout_section, .cart_section{
         padding: 4rem 0;
     }
     
@@ -208,7 +208,7 @@
         width: 100%;
     }
 
-    .checkout_section, .cart_section, .partner_topSection{
+    .passwordresetsection, .checkout_section, .cart_section, .partner_topSection{
         padding: 3rem 0;
     }
 
@@ -325,7 +325,7 @@
 
 /* ============ Max width 576px ============= */
 @media (max-width: 576px) {
-    .servicesPageSection, .mentor_choose_section{
+    .passwordresetsection, .servicesPageSection, .mentor_choose_section{
         padding: 3rem 0;
     }
     .borderDiv{
@@ -394,6 +394,9 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
+    .checkout_right, .cart_total_inner, .password_up{
+        padding: 1.5rem .9rem;
+    }
     .checkout_section, .cart_section, .partner_topSection{
         padding: 2rem 0;
     }

@@ -8,4 +8,10 @@ $(document).ready(function(){
         couponSBD.hide();
         couponSBD.next(".appliedCoupon").show();
     });
+    $(".pResetBtn").click(function(e){
+        e.preventDefault();
+        let passwordMain = $(this).closest(".password_up");
+        passwordMain.hide();
+        passwordMain.next(".passResetAmassage").show();
+    });
 });

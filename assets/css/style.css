@@ -754,6 +754,8 @@ img{
     margin-right: -100%;
     transition: .4s;
     font-weight: 600;
+    border: 1px solid var(--primary-color);
+    border-right: none;
 }
 .serviceAddCard i{
     overflow: hidden;
@@ -762,6 +764,7 @@ img{
     font-size: 1rem;
     color: var(--light-black);
     display: inline-block;
+    border: 1px solid var(--primary-color);
 }
 .serviceAddCard :hover .SaddCard{
     margin-right: 0;
@@ -2493,7 +2496,50 @@ img{
 }
 /* checkout_section design end */
 
+/* password reset start */
+.passwordresetsection{
+    position: relative;
+    padding: 5rem 0;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.password_up{
+    padding: 1.5rem;
+    background: #F5F5F5;
+    border-radius: .4rem;
+    box-shadow: 0 0 2px var(--primary-color);
+    transition: .4s ease;
+}
+.passResetAmassage{
+    transition: .4s ease;
+    display: none;
+}
+.password_up label{
+    display: block;
+    font-weight: 500;
+    color: var(--primary-black);
+}
+.password_up input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline-color: var(--primary-color);
+    transition: .4s ease;
+    background: var(--white);
+}
+.password_up input:hover{
+    border-color: var(--primary-color);
+}
+/* password reset end */
+
 /* Inner page top slider img */
+.passwordResetSlider{
+    background: url('../images/TopSliderInner/passwordreset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .productDetails{
     background: url('../images/TopSliderInner/matchApplication.jpg');
     background-repeat: no-repeat;
