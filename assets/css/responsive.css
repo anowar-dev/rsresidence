@@ -59,6 +59,9 @@
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
 
+    .newOldPassSingle{
+        width: 100%;
+    }
     .deliveriInfo{
         flex-direction: column;
     }
@@ -321,6 +324,14 @@
     .servicesPageSection, .mentor_choose_section{
         padding: 4rem 0;
     }
+
+    .name_email_div {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .name_email_div .single{
+        width: 100%;
+    }
 }
 
 /* ============ Max width 576px ============= */
@@ -383,13 +394,7 @@
     .team_top img{
         width: 8rem;
     }
-    .name_email_div {
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-    .name_email_div .single{
-        width: 100%;
-    }
+    
 }
 
 /* Max width 520px */

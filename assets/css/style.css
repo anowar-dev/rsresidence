@@ -2531,6 +2531,17 @@ img{
 .password_up input:hover{
     border-color: var(--primary-color);
 }
+.newOldPassword{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4%;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+.newOldPassSingle{
+    width: 48%;
+}
 /* password reset end */
 
 /* Inner page top slider img */
