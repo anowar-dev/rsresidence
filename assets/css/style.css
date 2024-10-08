@@ -766,8 +766,15 @@ img{
     display: inline-block;
     border: 1px solid var(--primary-color);
 }
-.serviceAddCard :hover .SaddCard{
-    margin-right: 0;
+
+.serviceAddCard:hover i{
+    border-left: none;
+}
+.serviceAddCard:hover {
+    border-left: 1px solid var(--primary-color);
+}
+.serviceAddCard:hover .SaddCard{
+    margin-right: -.6rem;
 }
 .serviceAddCard i:hover{
     color: var(--primary-color);
@@ -1478,6 +1485,8 @@ img{
     text-transform: uppercase;
     color: #685a51;
     margin-bottom: -2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footerBcontent a{
     color: var(--hover-color);
