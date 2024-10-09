@@ -1814,14 +1814,14 @@ img{
 .pBoldText{
     font-weight: 900;
     font-size: 4rem;
-    color: var(--hover-color);
+    color: var(--primary-black);
 }
 .pd_highlight i{
     position: absolute;
     left: -5px;
     bottom: 0;
     font-weight: 900;
-    color: var(--hover-color);
+    color: var(--primary-black);
 }
 .pSmallHihlight{
     font-size: 1rem;
@@ -1829,7 +1829,7 @@ img{
     position: absolute;
     top: 0;
     right: -52%;
-    color: var(--hover-color);
+    color: var(--primary-black);
 }
 .product_description_section{
     background: var(--white);
