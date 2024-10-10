@@ -14,4 +14,10 @@ $(document).ready(function(){
         passwordMain.hide();
         passwordMain.next(".passResetAmassage").show();
     });
+    $(".DesAddressBtn").click(function(){
+        $(this).next(".addressEditMain").css({transform: "scale(1)"});
+    });
+    $(".editAddressMC").click(function(){
+        $(this).closest(".addressEditMain").css({transform: "scale(0)"});
+    });
 });

@@ -59,6 +59,21 @@
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
 
+    /* width 922px for dashboard */
+    .dashboardSitebar .nav-item .nav-link{
+        width: 12rem;
+    }
+    .dashboard_section{
+        padding: 4rem 0;
+    }
+    .dashboard_inner_single{
+        padding-left: 0;
+    }
+    .dashboardBody {
+        width: calc(100% - 13rem);
+    }
+    /* width 922px for dashboard end */
+
     .newOldPassSingle{
         width: 100%;
     }
@@ -204,6 +219,23 @@
 /* ============= Max width 767px ============ */
 
 @media (max-width: 768px) {
+    .dashboard_main{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .dashboardBody{
+        width: 100%;
+    }
+    .dashboardSitebar{
+        position: unset;
+    }
+    .dashboardSitebar{
+        width: 100%;
+    }
+    .dashboardSitebar .nav-item .nav-link{
+        width: 100%;
+    }
+    
     .desliveryName{
         flex-direction: column;
     }
@@ -211,7 +243,7 @@
         width: 100%;
     }
 
-    .passwordresetsection, .checkout_section, .cart_section, .partner_topSection{
+    .dashboard_section, .passwordresetsection, .checkout_section, .cart_section, .partner_topSection{
         padding: 3rem 0;
     }
 
@@ -402,7 +434,7 @@
     .checkout_right, .cart_total_inner, .password_up{
         padding: 1.5rem .9rem;
     }
-    .checkout_section, .cart_section, .partner_topSection{
+    .dashboard_section, .checkout_section, .cart_section, .partner_topSection{
         padding: 2rem 0;
     }
     .accordion-header.checkout{

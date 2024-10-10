@@ -2553,6 +2553,260 @@ img{
 }
 /* password reset end */
 
+/* dashboard section start */
+.dashboard_section{
+    position: relative;
+    padding: 5rem 0;
+    background: var(--white);
+    box-shadow: 0 0 50px 70px var(--white);
+}
+.dashboard_main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 1rem;
+}
+.dashboardSitebar{
+    flex-direction: column;
+    border: none;
+    position: sticky;
+    top: 100px;
+}
+.dashboardBody{
+    width: calc(100% - 16rem);
+}
+.dashboardSitebar .nav-item .nav-link{
+    width: 15rem;
+    background: rgba(0, 0, 0, .03);
+    text-align-last: left;
+    padding: 1rem;
+    margin-bottom: 0.4rem;
+    transition: .4s ease;
+    font-size: 1rem;
+    border-radius: .2rem;
+    font-weight: 600;
+    color: var(--primary-black);
+    outline: none;
+    box-shadow: none;
+}
+.dashboardSitebar .nav-item .nav-link:hover{
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, .01);
+}
+.dashboardSitebar .nav-item .nav-link.active{
+    background: var(--primary-color);
+    color: var(--white);
+}
+.dashboardSitebar .nav-item .nav-link.active:hover{
+    color: var(--white);
+}
+.dashboardSitebar .nav-item{
+    border: none;
+    box-shadow: none;
+}
+.dashboard_inner_single{
+    padding-left: 1.5rem;
+}
+.dasEmailDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+}
+.dasEmailDiv a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--paragraph-black);
+    transition: .4s ease;
+}
+.dasEmailDiv a:hover{
+    color: var(--primary-color);
+}
+.dasStatus{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+    margin-top: 0.5rem;
+}
+.dasStatus span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-black);
+}
+.dasStatus .statusBold{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.dashboard_inner_single.orderTableDasInner{
+    overflow: auto;
+}
+.dasOrderTable.table{
+    width: max-content;
+    overflow: auto;
+}
+.downloadList{
+    width: 100%;
+    padding-left: 0;
+    display: block;
+}
+
+.downloadName{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.downloadName i{
+    margin-left: 0.5rem;
+}
+.downloadItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem 0;
+}
+.dasAddressTab{
+    border-color: var(--primary-color);
+}
+.dasAddressTab .nav-item .nav-link{
+    border-color: var(--primary-color);
+    box-shadow: none;
+    margin-right: 1rem;
+    font-weight: 500;
+    color: var(--primary-black);
+}
+.dasAddressTab .nav-item .nav-link:hover{
+    color: var(--primary-color);
+}
+.dasAddressTab .nav-item .nav-link.active{
+    background: var(--primary-color);
+    color: var(--white);
+}
+.addressBox{
+    padding-top: 1rem;
+}
+.address_head{
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+    margin-bottom: 1rem;
+}
+.DesAddressBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: .4s ease;
+}
+.DesAddressBtn:hover{
+    color: var(--hover-color);
+}
+.sub_title5{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-black);
+    margin-bottom: 0.4rem;
+}
+.email_div_forA{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: 0.4rem;
+}
+.email_div_forA p{
+    margin-bottom: 0;
+}
+.bold_paragraoh{
+    font-weight: 500;
+}
+.addressDetailsDiv{
+    margin-top: 1.5rem;
+}
+.addressDetailsDiv p{
+    margin-bottom: .4rem;
+}
+.addressDetailsDiv p b{
+    width: 20rem;
+}
+.addressEditMain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999999999999999;
+    transform: scale(0);
+    transition: .4s ease;
+}
+.checkout_left.addressEditBody{
+    width: 100%;
+    padding: 1rem;
+}
+.addressEditInner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 40rem;
+    background: var(--white);
+    border-radius: .4rem;
+    max-height: 95vh;
+    overflow-y: auto;
+}
+.addressEditHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.editAddressMC{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.editAddressMC i{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: .3s ease;
+}
+.editAddressMC i:hover{
+    color: var(--hover-color);
+}
+.desliveryName{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 1rem;
+}
+.accountDetail label{
+    display: block;
+}
+.accountDetail input{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline-color: var(--primary-color);
+    transition: .4s ease;
+    display: block;
+    margin-bottom: 1rem;
+}
+.accountDetail input:hover{
+    border-color: var(--primary-color);
+}
+/* dashboard section end */
+
+
 /* Inner page top slider img */
 .passwordResetSlider{
     background: url('../images/TopSliderInner/passwordreset.jpg');
@@ -2610,6 +2864,12 @@ img{
 }
 .checkoutPageSlider{
     background: url('../images/TopSliderInner/checkout.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dashboardPageSlider{
+    background: url('../images/TopSliderInner/network.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

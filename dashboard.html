@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Residency Success</title>
+    
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        
+    
+        <!-- Bootstrap CSS (CDN) -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+        <!-- Choices.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    
+    
+         <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
+    
+        <!-- Custom css -->
+         <link rel="stylesheet" href="./assets/css/style.css">
+         <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
+<body>
+    
+
+    <!-- Header section -->
+     <section class="header_section">
+        <div class="container">
+            <!-- Desktop header -->
+            <div class="desktop_header">
+                <div class="logosection">
+                    <a href="index.html" class="mLogoLink">
+                        <img src="./assets/images/logo/Blue.png" alt="Logo">
+                    </a>
+                </div>
+                
+                <!-- Menu and buttons -->
+                <div class="deskMenuButtons">
+                    <div class="desktop_menubar d-none d-lg-block">
+                        <ul class="desktopMlist">
+                            <li class="desktop_mItem">
+                                <a href="index.html" class="desktopMlink active">Home</a>
+                            </li>
+                            <li class="desktop_mItem">
+                                <a href="about-us.html" class="desktopMlink">About Us</a>
+                            </li>
+                            <li class="desktop_mItem">
+                                <div class="desktoplink">
+                                    <span>Services</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+
+                                <!-- Submenu -->
+                                <ul class="deskSubmenu">
+                                    <li class="deskSubItem">
+                                        <div class="desktopSMlink">
+                                            <span>Residency Match</span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+
+                                        <!-- Submenu Inner -->
+                                        <ul class="desSubMenu2">
+                                            <li class="desk_subItem2">
+                                                <a href="match-application.html" class="deskSubLink2 subLinkD">Match Application Review & Strategy</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Curriculum Vitae Review</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Personal Statement Review</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Interview Preparation</a>
+                                            </li>
+                                            <li class="desk_subItem2">
+                                                <a href="#" class="deskSubLink2 subLinkD">Additional Services</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="deskSubItem">
+                                        <a href="mentorship.html" class="desktopSMlink subLinkD">Mentorship Plans</a>
+                                    </li>
+                                    <li class="deskSubItem">
+                                        <a href="match-application.html" class="desktopSMlink subLinkD">USMLE Tutoring</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="desktop_mItem">
+                                <a href="contact.html" class="desktopMlink">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desktop_rightSide">
+                        <a href="augth.html" class="header_user"><i class="fa-regular fa-circle-user"></i></a>
+                        <a href="cart.html" class="header_card"><i class="fa-solid fa-basket-shopping"></i></a>
+                        <button class="Mobile_menuOpen d-lg-none" data-bs-target="#mobileOffCanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Mobile header -->
+             <div class="mobile_header offcanvas offcanvas-start" id="mobileOffCanvas">
+                <div class="offcanvas-header">
+                    <div class="OCHC">
+                        <a href="index.html" class="mobileLogoTop">
+                            <img src="./assets/images/logo/Blue.png" alt="Logo">
+                        </a>
+                        <button class="mobileMenuClose" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu body -->
+                <div class="offcanvas-body">
+                    <ul class="MobileMlist">
+                        <li class="Mobile_mItem">
+                            <a href="index.html" class="MobileMlink">Home</a>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <a href="about-us.html" class="MobileMlink">About Us</a>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <div class="Mobilelink">
+                                <span>Services</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <!-- Submenu -->
+                            <ul class="MobileSubmenu">
+                                <li class="MobileSubItem">
+                                    <div class="MobileSMlink">
+                                        <span>Residency Match</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+
+                                    <!-- Submenu Inner -->
+                                    <ul class="MobileSubMenu2">
+                                        <li class="Mobile_subItem2">
+                                            <a href="match-application.html" class="MobileSubLink2">Match Application Review & Strategy</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Curriculum Vitae Review</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Personal Statement Review</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Interview Preparation</a>
+                                        </li>
+                                        <li class="Mobile_subItem2">
+                                            <a href="#" class="MobileSubLink2">Additional Services</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="MobileSubItem">
+                                    <a href="mentorship.html" class="MobileSMlink">Mentorship Plans</a>
+                                </li>
+                                <li class="MobileSubItem">
+                                    <a href="match-application.html" class="MobileSMlink">USMLE Tutoring</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Mobile_mItem">
+                            <a href="contact.html" class="MobileMlink">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+     </section>
+
+
+    <!-- Slider section -->
+     <section class="topSliderSection singlepage dashboardPageSlider">
+
+        <!-- Slider single -->
+        <div class="sliderResidency sicgle_slider">
+            <div class="bgLightSlider singlepage"></div>
+            <div class="container">
+                <div class="slider_data singlepage">
+                    <h1 class="title">My account</h1>
+                    <div class="borderDiv"></div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+
+    <!-- Dashboard section -->
+    <section class="dashboard_section">
+        <div class="container">
+            <div class="dashboard_main">
+
+                <!-- Dashboard Sitebar -->
+                <ul class="nav nav-tabs dashboardSitebar" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-tab-pane" type="button" role="tab" aria-controls="dashboard-tab-pane" aria-selected="true">Dashboard</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="order-tab-pane" aria-selected="false">Order</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads-tab-pane" type="button" role="tab" aria-controls="downloads-tab-pane" aria-selected="false">Downloads</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="addresses-tab" data-bs-toggle="tab" data-bs-target="#addresses-tab-pane" type="button" role="tab" aria-controls="addresses-tab-pane" aria-selected="false">Addresses</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="false">Account details</button>
+                    </li>
+                    <li class="nav-item" role="#">
+                        <button class="nav-link" type="button" aria-selected="false">Logout</button>
+                    </li>
+                </ul>
+
+                <!-- Dashoard body -->
+                <div class="tab-content dashboardBody" id="myTabContent">
+
+                    <!-- Dashboard Details -->
+                    <div class="tab-pane show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">
+                        <div class="dashboard_inner_single">
+                            <h2 class="hellow mb-3 mb-lg-4">Hellow,</h2>
+                            <h3 class="sub_title4">Md Anower Hossan</h3>
+                            <div class="dasEmailDiv">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto: anowerhossan1988@gmail.com" class="dashboarEmail">anowerhossan1988@gmail.com</a>
+                            </div>
+                            <div class="dasStatus">
+                                <span>Annount status:</span>
+                                <span class="statusBold">Basic client</span>
+                            </div>
+                            <p class="paragraph mt-3 mt-lg-4">From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Orders -->
+                    <div class="tab-pane" id="order-tab-pane" role="tabpanel" aria-labelledby="order-tab" tabindex="0">
+                        <div class="dashboard_inner_single orderTableDasInner">
+                            <h4 class="sub_title4 mb-3 mb-lg-4">Order list</h4>
+                            <table class="dasOrderTable table table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Prodct name</th>
+                                        <th>Product price</th>
+                                        <th>Order status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <!-- Single order -->
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Basic Plan</td>
+                                        <td>$300</td>
+                                        <td>Shipted</td>
+                                    </tr>
+
+                                    <!-- Single order -->
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Match Application Review & Strategy</td>
+                                        <td>$320</td>
+                                        <td>In progress</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Dasboard download -->
+                    <div class="tab-pane" id="downloads-tab-pane" role="tabpanel" aria-labelledby="downloads-tab" tabindex="0">
+                        <div class="dashboard_inner_single">
+                            <h4 class="sub_title4 mb-3 mb-lg-4">Download list</h4>
+                            <ul class="downloadList">
+                                <li class="downloadItem">
+                                    <span class="downloadName">
+                                        Contact paper
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                    <button class="dasDownloadBtn primary_btn">Download</button>
+                                </li>
+                                <li class="downloadItem">
+                                    <span class="downloadName">
+                                        Order history
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                    <button class="dasDownloadBtn primary_btn">Download</button>
+                                </li>
+                                <li class="downloadItem">
+                                    <span class="downloadName">
+                                        Payment history
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                    <button class="dasDownloadBtn primary_btn">Download</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard address -->
+                    <div class="tab-pane" id="addresses-tab-pane" role="tabpanel" aria-labelledby="addresses-tab" tabindex="0">
+                        <div class="dashboard_inner_single">
+                            <h4 class="sub_title4">Address</h4>
+                            <p class="paragraph">The following addresses will be used on the checkout page by default.</p>
+                            <div class="addessInnerDas">
+                                <ul class="dasAddressTab nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="billingAddress-tab" data-bs-toggle="tab" data-bs-target="#billingAddress-tab-pane" type="button" role="tab" aria-controls="billingAddress-tab-pane" aria-selected="true">Billing address</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="shiping-tab" data-bs-toggle="tab" data-bs-target="#shiping-tab-pane" type="button" role="tab" aria-controls="shiping-tab-pane" aria-selected="false">Shiping address</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+
+                                    <!-- Billing Address -->
+                                    <div class="addressBox tab-pane fade show active" id="billingAddress-tab-pane" role="tabpanel" aria-labelledby="billingAddress-tab" tabindex="0">
+                                        
+                                        <div class="address_head">
+                                            <h4 class="sub_title4">Billing address</h4>
+                                            <button class="DesAddressBtn">Edit address</button>
+
+                                            <!-- Address Edit modal -->
+                                            <div class="addressEditMain">
+                                                <div class="addressEditInner">
+                                                    <div class="addressEditHeader">
+                                                        <h5 class="sub_title5">Edit billing address</h5>
+                                                        <button class="editAddressMC"><i class="fa-solid fa-xmark"></i></button>
+                                                    </div>
+
+                                                    <!-- Address edit body -->                                                    
+                                                    <div class="checkout_left addressEditBody">
+                                                        <div class="desliveryName">
+                                                            <div class="dVNmaneSimgle">
+                                                                <label for="deliveryFname" class="deliveryFname">Forst name *</label>
+                                                                <input type="text" id="deliveryFname" required>
+                                                            </div>
+                                                            <div class="dVNmaneSimgle">
+                                                                <label for="deliveryLname" class="deliveryFname">Last name *</label>
+                                                                <input type="text" id="deliveryLname" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <label for="dvEmail">Email *</label>
+                                                        <input type="email" id="dvEmail" required>
+
+                                                        <label for="dvPhone">Phone *</label>
+                                                        <input type="tel" id="dvPhone" required>
+                                                        
+                                                        <label for="billingCountry">Country / Region *</label>
+                                                        <select id="billingCountry" required>
+                                                            <option value="dv1">Bangladesh</option>
+                                                            <option value="dv2">United States (US)</option>
+                                                            <option value="dv3">United Kingdom (UK)</option>
+                                                            <option value="dv4">United Arab Emerate (UAE)</option>
+                                                            <option value="dv5">London</option>
+                                                            <option value="dv6">Hongkong</option>
+                                                            <option value="dv7">Malaysia</option>
+                                                            <option value="dv8">Japan</option>
+                                                        </select>
+
+                                                        <label for="dvAddress">Street address *</label>
+                                                        <input type="text" id="dvAddress" placeholder="House number and street name" required>
+                                                        <input type="text" placeholder="Apartment unit etc (Optional)">
+                                                        <label for="dvCity">Town / City *</label>
+                                                        <input type="text" id="dvCity" required>
+                                                        <label for="shipingState">State *</label>
+                                                        <select id="shipingState" required>
+                                                            <option value="dvs1">Dhaka</option>
+                                                            <option value="dvs2">Borisal</option>
+                                                            <option value="dvs3">Cumilla</option>
+                                                            <option value="dvs4">Chittagong</option>
+                                                            <option value="dvs5">Rajshahi</option>
+                                                            <option value="dvs6">Rangpur</option>
+                                                            <option value="dvs7">Maymanshing</option>
+                                                            <option value="dvs8">Bhola</option>
+                                                        </select>
+                                                        <label for="dvZipcode">ZIP Code *</label>
+                                                        <input type="text" id="dvZipcode" required>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Address body -->
+                                        <div class="address_body">
+                                            <h4 class="sub_title5">Md Anower Hossan</h4>
+                                            <div class="email_div_forA">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <p class="bold_paragraoh">anowerhossan1988@gmail.com</p>
+                                            </div>
+                                            <div class="email_div_forA">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <p class="bold_paragraoh">01990000922</p>
+                                            </div>
+                                            <div class="addressDetailsDiv">
+                                                <p class="paragraph"><b>Address:</b> House: 172, Vill: Char-veduria, Post: Vediria, PS: Bhola Sadar.</p>
+                                                <p class="paragraph"><b>City:</b> Bhola</p>
+                                                <p class="paragraph"><b>Division:</b> Borishal</p>
+                                                <p class="paragraph"><b>Country:</b> Bangladesh</p>
+                                                <p class="paragraph"><b>Zip code:</b> 8300</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Shiping address -->
+                                    <div class="addressBox tab-pane fade" id="shiping-tab-pane" role="tabpanel" aria-labelledby="shiping-tab" tabindex="0">
+                                        <div class="address_head">
+                                            <h4 class="sub_title4">Shiping address</h4>
+                                            <button class="DesAddressBtn">Edit address</button>
+
+                                            <!-- Address Edit modal -->
+                                            <div class="addressEditMain">
+                                                <div class="addressEditInner">
+                                                    <div class="addressEditHeader">
+                                                        <h5 class="sub_title5">Edit billing address</h5>
+                                                        <button class="editAddressMC"><i class="fa-solid fa-xmark"></i></button>
+                                                    </div>
+
+                                                    <!-- Address edit body -->                                                    
+                                                    <div class="checkout_left addressEditBody">
+                                                        <div class="desliveryName">
+                                                            <div class="dVNmaneSimgle">
+                                                                <label for="deliveryFname" class="deliveryFname">Forst name *</label>
+                                                                <input type="text" id="deliveryFname" required>
+                                                            </div>
+                                                            <div class="dVNmaneSimgle">
+                                                                <label for="deliveryLname" class="deliveryFname">Last name *</label>
+                                                                <input type="text" id="deliveryLname" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <label for="dvEmail">Email *</label>
+                                                        <input type="email" id="dvEmail" required>
+                                                        
+                                                        <label for="dvPhone">Phone *</label>
+                                                        <input type="tel" id="dvPhone" required>
+                                                        
+                                                        <label for="signupCountry">Country / Region *</label>
+                                                        <select id="signupCountry" required>
+                                                            <option value="dv1">Bangladesh</option>
+                                                            <option value="dv2">United States (US)</option>
+                                                            <option value="dv3">United Kingdom (UK)</option>
+                                                            <option value="dv4">United Arab Emerate (UAE)</option>
+                                                            <option value="dv5">London</option>
+                                                            <option value="dv6">Hongkong</option>
+                                                            <option value="dv7">Malaysia</option>
+                                                            <option value="dv8">Japan</option>
+                                                        </select>
+
+                                                        <label for="dvAddress">Street address *</label>
+                                                        <input type="text" id="dvAddress" placeholder="House number and street name" required>
+                                                        <input type="text" placeholder="Apartment unit etc (Optional)">
+                                                        <label for="dvCity">Town / City *</label>
+                                                        <input type="text" id="dvCity" required>
+                                                        <label for="dvState">State *</label>
+                                                        <select id="dvState" required>
+                                                            <option value="dvs1">Dhaka</option>
+                                                            <option value="dvs2">Borisal</option>
+                                                            <option value="dvs3">Cumilla</option>
+                                                            <option value="dvs4">Chittagong</option>
+                                                            <option value="dvs5">Rajshahi</option>
+                                                            <option value="dvs6">Rangpur</option>
+                                                            <option value="dvs7">Maymanshing</option>
+                                                            <option value="dvs8">Bhola</option>
+                                                        </select>
+                                                        <label for="dvZipcode">ZIP Code *</label>
+                                                        <input type="text" id="dvZipcode" required>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Address body -->
+                                        <div class="address_body">
+                                            <h4 class="sub_title5">Md Anower Hossan</h4>
+                                            <div class="email_div_forA">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <p class="bold_paragraoh">anowerhossan1988@gmail.com</p>
+                                            </div>
+                                            <div class="email_div_forA">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <p class="bold_paragraoh">01990000922</p>
+                                            </div>
+                                            <div class="addressDetailsDiv">
+                                                <p class="paragraph"><b>Address:</b> House: 172, Vill: Char-veduria, Post: Vediria, PS: Bhola Sadar.</p>
+                                                <p class="paragraph"><b>City:</b> Bhola</p>
+                                                <p class="paragraph"><b>Division:</b> Borishal</p>
+                                                <p class="paragraph"><b>Country:</b> Bangladesh</p>
+                                                <p class="paragraph"><b>Zip code:</b> 8300</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accoutn details -->
+                    <div class="tab-pane" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
+                        <div class="dashboard_inner_single accountDetail">
+
+                            <h4 class="sub_title4 mb-3 mb-lg-4">Account details</h4>
+                            <div class="desliveryName">
+                                <div class="dVNmaneSimgle">
+                                    <label for="deliveryFname" class="deliveryFname">Forst name *</label>
+                                    <input type="text" id="deliveryFname" required>
+                                </div>
+                                <div class="dVNmaneSimgle">
+                                    <label for="deliveryLname" class="deliveryFname">Last name *</label>
+                                    <input type="text" id="deliveryLname" required>
+                                </div>
+                            </div>
+                            <label for="displayName">Display name</label>
+                            <input type="text" name="#" id="displayName">
+                            <label for="dvEmail">Email *</label>
+                            <input type="email" id="dvEmail" required>
+    
+                            <label for="dvPhone">Phone *</label>
+                            <input type="tel" id="dvPhone" required>
+
+                            <h5 class="sub_title5 mt-4 mt-lg-5">Password change</h5>
+                            <label for="currentPass">Current password</label>
+                            <input type="password" name="#" id="currentPass">
+                            <label for="NewPass">New password</label>
+                            <input type="password" name="#" id="NewPass">
+                            <label for="ConfirmPass">Confirm password</label>
+                            <input type="password" name="#" id="ConfirmPass">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+     <section class="footerSection position-relative">
+        <div class="container">
+            <div class="footerMain">
+
+                <!-- Footer Top -->
+                <div class="footertop">
+                    <div class="footerTleft">
+                        <img src="./assets/images/logo/Blue.png" alt="">
+                    </div>
+                    <div class="footerTright">
+                        <div class="footerRsingle">
+                            <i class="fa-solid fa-headphones"></i>
+                            <a href="tel: +1-917-524-8067" class="footerNumber">+1-917-524-8067</a>
+                        </div>
+                        <div class="footerRsingle">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: Info@mibpromotions.com" class="footerNumber">Info@mibpromotions.com</a>
+                        </div>
+                        <div class="footerRsingle footerSocials">
+                            <div class="footerSocialInner">
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" target="_blank" class="socialSingle"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer middle -->
+                <div class="footerMiddle">
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Services</h4>
+                        <a href="match-application.html" class="footerLinks">Match Application Review & Strategy</a>
+                        <a href="match-application.html" class="footerLinks">Curriculum Vitae Review</a>
+                        <a href="match-application.html" class="footerLinks">Personal Statement Review</a>
+                        <a href="match-application.html" class="footerLinks">Interview Preparation</a>
+                        <a href="match-application.html" class="footerLinks">Additional Services</a>
+                        <a href="mentorship.html" class="footerLinks">Mentorship Plans</a>
+                    </div>
+
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Quick Links</h4>
+                        <a href="#" class="footerLinks">Home</a>
+                        <a href="about-us.html" class="footerLinks">About Us</a>
+                        <a href="services.html" class="footerLinks">Services</a>
+                        <a href="partners.html" class="footerLinks">Our Partners</a>
+                        <a href="contact.html" class="footerLinks">Contact Us</a>
+                        <a href="faqs.html" class="footerLinks">FAQs</a>
+                        <a href="augth.html" class="footerLinks">Sign Up</a>
+                    </div>
+
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Packages</h4>
+                        <a href="mentorship.html" class="footerLinks">Basic Plan</a>
+                        <a href="mentorship.html" class="footerLinks">Platinum Plan</a>
+                        <a href="mentorship.html" class="footerLinks">Platinum Plus</a>
+                        <img src="./assets/images/singleSection/secure-stripe-payment.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footertop">
+                    <p class="footerBcontent">DESIGN AND DEVELOPED BY  <a href="#">NOVA DESIGNS</a></p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- Back to top -->
+     <a href="#" class="backTop">
+        <i class="fa-solid fa-arrow-up"></i>
+     </a>
+
+    <!--========= All js references =========-->
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery Full Version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Calender js -->
+    <script src="./assets/javaScript/jquery.bs.calendar.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Choices.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/javaScript/script.js"></script>
+
+    <!-- Extra js -->
+    <script src="./assets/javaScript/extra.js"></script>
+    <script src="./assets/javaScript/modal.js"></script>
+</body>
+</html>

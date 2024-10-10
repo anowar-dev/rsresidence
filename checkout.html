@@ -287,6 +287,34 @@
                             </label>
                             <label for="dvOrderNote">Order notes (optional)</label>
                             <textarea name="#" id="dvOrderNote"></textarea>
+
+                            <!-- Aditional information -->
+                            <h4 class="sub_title4 mb-3 mb-lg-4">Aditional information</h4>
+                            <div class="checout_coupon">
+                                <div class="accordion" id="accordionCheckoutCoupon2">
+                                    <div class="checkout accordion-item">
+                                      <h2 class="accordion-header checkout">
+                                        <button class="checkoutAH accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCheck2" aria-expanded="true" aria-controls="collapseCheck2">
+                                          Contact Paper
+                                        </button>
+                                      </h2>
+                                      <div id="collapseCheck2" class="accordion-collapse collapse" data-bs-parent="#accordionCheckoutCoupon2">
+                                        <div class="accordion-body">
+                                            <p class="paragraph">If you have a coupon code, please apply it below.</p>
+                                            <input type="text" placeholder="Coupon code">
+                                            <button class="small_btn checkoutSB">Submit</button>
+                                            
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="appliedCoupon">
+                                    <div class="appliedCouponInner">
+                                        <span>Applied coupon</span>
+                                        <span class="codes">TESTCOUPONCODE</span>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Checkout body right -->
@@ -313,7 +341,7 @@
                                         
                                         <button class="checkoutAH accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightOne" aria-expanded="true" aria-controls="collapseRightOne">
                                             <label class="paymentMethodLabel">
-                                                <input type="radio" name="paymentMethod">
+                                                <input type="radio" name="paymentMethod" checked>
                                                 <span>Direct bank transfer</span>
                                             </label>
                                         </button>
