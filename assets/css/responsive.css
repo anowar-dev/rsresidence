@@ -1,5 +1,6 @@
 @import url("style.css");
 
+
 /* Max width 1400px  */
 @media (max-width: 1400px) {
     .combo_planBody{
@@ -246,7 +247,9 @@
     .dashboard_section, .passwordresetsection, .checkout_section, .cart_section, .partner_topSection{
         padding: 3rem 0;
     }
-
+    .title.error_title{
+        font-size: 6rem;
+    }
     /* home page for 767px */
     .successSingle{
         width: 49%;
@@ -426,7 +429,11 @@
     .team_top img{
         width: 8rem;
     }
-    
+    .title.error_title{
+        font-size: 5rem;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* Max width 520px */

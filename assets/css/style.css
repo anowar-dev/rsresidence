@@ -2642,8 +2642,34 @@ img{
     overflow: auto;
 }
 .dasOrderTable.table{
-    width: max-content;
+    width: 100%;
     overflow: auto;
+}
+.error_btn.primary_btn{
+    display: block;
+    width: fit-content;
+}
+.paragraph.error_page{
+    color: rgba(255, 255, 255, .3);
+}
+.title.error_title{
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+.topSliderSectio{
+    background: rgba(0, 0, 0, .5);
+}
+.error_main{
+    position: relative;
+    height: 100vh;
+}
+
+.slider_dat.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 2rem;
 }
 .downloadList{
     width: 100%;
@@ -2732,6 +2758,15 @@ img{
 }
 .addressDetailsDiv p b{
     width: 20rem;
+}
+.addressDetailsDiv .paragraph{
+    font-size: 1rem;
+}
+.addressDetailsDiv .paragraph b{
+    margin-right: 0.5rem;
+}
+.addessInnerDas{
+    margin-top: 2rem;
 }
 .addressEditMain{
     position: fixed;
