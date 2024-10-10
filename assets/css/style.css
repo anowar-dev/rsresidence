@@ -2645,6 +2645,12 @@ img{
     width: 100%;
     overflow: auto;
 }
+.dasOrderTable th{
+    padding: 0.8rem;
+}
+.dasOrderTable td{
+    padding: 0.8rem;
+}
 .error_btn.primary_btn{
     display: block;
     width: fit-content;

@@ -215,6 +215,13 @@
     .faqsContact{
         padding: 0;
     }
+    .dasOrderTable.table{
+        width: max-content;
+        overflow: auto;
+    }
+    .dashboardSitebar .nav-item .nav-link{
+        padding: 0.8rem 1rem;
+    }
 }
 
 /* ============= Max width 767px ============ */
@@ -250,6 +257,7 @@
     .title.error_title{
         font-size: 6rem;
     }
+    
     /* home page for 767px */
     .successSingle{
         width: 49%;
