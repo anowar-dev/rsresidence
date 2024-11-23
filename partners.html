@@ -12,7 +12,7 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
     
         <!-- Bootstrap CSS (CDN) -->
@@ -35,13 +35,32 @@
     
 
     <!-- Header section -->
-     <section class="header_section">
+    <section class="header_section">
         <div class="container">
+            <!-- top navbar -->
+            <div class="topnavBarMain d-none d-lg-block">
+                <div class="topnavbar">
+                    <div class="footerRsingle">
+                        <span>Mobile:</span>
+                        <a href="tel: +1-917-524-8067" class="footerNumber">+1-917-524-8067</a>
+                    </div>
+                    <div class="footerRsingle footerSocials">
+                        <div class="footerSocialInner">
+                            <a href="https://www.facebook.com/MDtoattending/" target="_blank" class="socialSingle"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UCoFTdowvxSLu_dE83GUi70w" target="_blank" class="socialSingle"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/residencysuccess/" target="_blank" class="socialSingle"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=19175248067" target="_blank" class="socialSingle"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://twitter.com/Residencysucce1?s=20" target="_blank" class="socialSingle"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Desktop header -->
             <div class="desktop_header">
                 <div class="logosection">
                     <a href="index.html" class="mLogoLink">
-                        <img src="./assets/images/logo/Blue.png" alt="Logo">
+                        <img class="blueLogo" src="./assets/images/logo/Blue.png" alt="Logo">
+                        <img class="whiteLogo" src="./assets/images/logo/Logo-White-Transparent.png" alt="Logo">
                     </a>
                 </div>
                 
@@ -50,23 +69,23 @@
                     <div class="desktop_menubar d-none d-lg-block">
                         <ul class="desktopMlist">
                             <li class="desktop_mItem">
-                                <a href="index.html" class="desktopMlink active">Home</a>
+                                <a href="/" class="desktopMlink active">Home</a>
                             </li>
                             <li class="desktop_mItem">
                                 <a href="about-us.html" class="desktopMlink">About Us</a>
                             </li>
                             <li class="desktop_mItem">
-                                <div class="desktoplink">
+                                <a href="services.html" class="desktoplink desktopMlink">
                                     <span>Services</span>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </div>
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
 
                                 <!-- Submenu -->
                                 <ul class="deskSubmenu">
                                     <li class="deskSubItem">
                                         <div class="desktopSMlink">
                                             <span>Residency Match</span>
-                                            <i class="fa-solid fa-angle-down"></i>
+                                            <i class="fa-solid fa-plus"></i>
                                         </div>
 
                                         <!-- Submenu Inner -->
@@ -75,16 +94,16 @@
                                                 <a href="match-application.html" class="deskSubLink2 subLinkD">Match Application Review & Strategy</a>
                                             </li>
                                             <li class="desk_subItem2">
-                                                <a href="#" class="deskSubLink2 subLinkD">Curriculum Vitae Review</a>
+                                                <a href="curriculum-vitae.html" class="deskSubLink2 subLinkD">Curriculum Vitae Review</a>
                                             </li>
                                             <li class="desk_subItem2">
-                                                <a href="#" class="deskSubLink2 subLinkD">Personal Statement Review</a>
+                                                <a href="personal-statement.html" class="deskSubLink2 subLinkD">Personal Statement Review</a>
                                             </li>
                                             <li class="desk_subItem2">
-                                                <a href="#" class="deskSubLink2 subLinkD">Interview Preparation</a>
+                                                <a href="interview-preparation.html" class="deskSubLink2 subLinkD">Interview Preparation</a>
                                             </li>
                                             <li class="desk_subItem2">
-                                                <a href="#" class="deskSubLink2 subLinkD">Additional Services</a>
+                                                <a href="additional-services.html" class="deskSubLink2 subLinkD">Additional Services</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -92,20 +111,23 @@
                                         <a href="mentorship.html" class="desktopSMlink subLinkD">Mentorship Plans</a>
                                     </li>
                                     <li class="deskSubItem">
-                                        <a href="match-application.html" class="desktopSMlink subLinkD">USMLE Tutoring</a>
+                                        <a href="usmle-tutoring.html" class="desktopSMlink subLinkD">USMLE Tutoring</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="desktop_mItem">
                                 <a href="contact.html" class="desktopMlink">Contact Us</a>
                             </li>
+                            <li class="desktop_mItem">
+                                <a href="augth.html" class="desktoplink desktopMlink">
+                                    <span>Sign In</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li> 
                         </ul>
                     </div>
-                    <div class="desktop_rightSide">
-                        <a href="augth.html" class="header_user"><i class="fa-regular fa-circle-user"></i></a>
-                        <a href="cart.html" class="header_card"><i class="fa-solid fa-basket-shopping"></i></a>
-                        <button class="Mobile_menuOpen d-lg-none" data-bs-target="#mobileOffCanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i></button>
-                    </div>
+
+                    <button class="Mobile_menuOpen d-lg-none" data-bs-target="#mobileOffCanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
 
@@ -131,17 +153,17 @@
                             <a href="about-us.html" class="MobileMlink">About Us</a>
                         </li>
                         <li class="Mobile_mItem">
-                            <div class="Mobilelink">
+                            <a href="services.html" class="Mobilelink">
                                 <span>Services</span>
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
 
                             <!-- Submenu -->
                             <ul class="MobileSubmenu">
                                 <li class="MobileSubItem">
                                     <div class="MobileSMlink">
                                         <span>Residency Match</span>
-                                        <i class="fa-solid fa-angle-down"></i>
+                                        <i class="fa-solid fa-plus"></i>
                                     </div>
 
                                     <!-- Submenu Inner -->
@@ -150,16 +172,16 @@
                                             <a href="match-application.html" class="MobileSubLink2">Match Application Review & Strategy</a>
                                         </li>
                                         <li class="Mobile_subItem2">
-                                            <a href="#" class="MobileSubLink2">Curriculum Vitae Review</a>
+                                            <a href="curriculum-vitae.html" class="MobileSubLink2">Curriculum Vitae Review</a>
                                         </li>
                                         <li class="Mobile_subItem2">
-                                            <a href="#" class="MobileSubLink2">Personal Statement Review</a>
+                                            <a href="personal-statement.html" class="MobileSubLink2">Personal Statement Review</a>
                                         </li>
                                         <li class="Mobile_subItem2">
-                                            <a href="#" class="MobileSubLink2">Interview Preparation</a>
+                                            <a href="interview-preparation.html" class="MobileSubLink2">Interview Preparation</a>
                                         </li>
                                         <li class="Mobile_subItem2">
-                                            <a href="#" class="MobileSubLink2">Additional Services</a>
+                                            <a href="additional-services.html" class="MobileSubLink2">Additional Services</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -167,18 +189,24 @@
                                     <a href="mentorship.html" class="MobileSMlink">Mentorship Plans</a>
                                 </li>
                                 <li class="MobileSubItem">
-                                    <a href="match-application.html" class="MobileSMlink">USMLE Tutoring</a>
+                                    <a href="usmle-tutoring.html" class="MobileSMlink">USMLE Tutoring</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="Mobile_mItem">
                             <a href="contact.html" class="MobileMlink">Contact Us</a>
                         </li>
+                        <li class="Mobile_mItem">
+                            <a href="augth.html" class="Mobilelink">
+                                <span>Sign In</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
              </div>
         </div>
-     </section>
+    </section>
 
 
     <!-- Slider section -->
@@ -442,15 +470,17 @@
     
 
     <!-- Footer Section -->
-     <section class="footerSection">
+    <section class="footerSection position-relative">
         <div class="container">
             <div class="footerMain">
 
                 <!-- Footer Top -->
-                <div class="footertop">
-                    <div class="footerTleft">
-                        <img src="./assets/images/logo/Blue.png" alt="">
-                    </div>
+                <!-- <div class="footertop">
+                    <a href="{% url 'home' %}">
+                        <div class="footerTleft">
+                            <img src="{% static './images/logo/Blue.png' %}" alt="">
+                        </div>
+                    </a>
                     <div class="footerTright">
                         <div class="footerRsingle">
                             <i class="fa-solid fa-headphones"></i>
@@ -470,23 +500,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Footer middle -->
                 <div class="footerMiddle">
                     <div class="fiiterMiddleSingle">
                         <h4 class="footerTitle">Services</h4>
                         <a href="match-application.html" class="footerLinks">Match Application Review & Strategy</a>
-                        <a href="match-application.html" class="footerLinks">Curriculum Vitae Review</a>
-                        <a href="match-application.html" class="footerLinks">Personal Statement Review</a>
-                        <a href="match-application.html" class="footerLinks">Interview Preparation</a>
-                        <a href="match-application.html" class="footerLinks">Additional Services</a>
+                        <a href="curriculum-vitae.html" class="footerLinks">Curriculum Vitae Review</a>
+                        <a href="personal-statement.html" class="footerLinks">Personal Statement Review</a>
+                        <a href="interview-preparation.html" class="footerLinks">Interview Preparation</a>
+                        <a href="additional-services.html" class="footerLinks">Additional Services</a>
                         <a href="mentorship.html" class="footerLinks">Mentorship Plans</a>
                     </div>
 
                     <div class="fiiterMiddleSingle">
                         <h4 class="footerTitle">Quick Links</h4>
-                        <a href="#" class="footerLinks">Home</a>
+                        <a href="index.html" class="footerLinks">Home</a>
                         <a href="about-us.html" class="footerLinks">About Us</a>
                         <a href="services.html" class="footerLinks">Services</a>
                         <a href="partners.html" class="footerLinks">Our Partners</a>
@@ -500,18 +530,30 @@
                         <a href="mentorship.html" class="footerLinks">Basic Plan</a>
                         <a href="mentorship.html" class="footerLinks">Platinum Plan</a>
                         <a href="mentorship.html" class="footerLinks">Platinum Plus</a>
-                        <img src="./assets/images/singleSection/secure-stripe-payment.png" alt="">
+                    </div>
+
+                    <div class="fiiterMiddleSingle">
+                        <h4 class="footerTitle">Contact</h4>
+                        <div class="footerRsingle footerLinks">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel: +1-917-524-8067" class="footerNumber">+1-917-524-8067</a>
+                        </div>
+                        <div class="footerRsingle footerLinks">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: Info@mibpromotions.com" class="footerNumber">Info@mibpromotions.com</a>
+                        </div>
+                        <img src="./assets/images/logo/secure-stripe-payment-logo-300x46.png" alt="">
                     </div>
 
                 </div>
 
                 <!-- Footer bottom -->
                 <div class="footertop">
-                    <p class="footerBcontent">DESIGN AND DEVELOPED BY  <a href="#">NOVA DESIGNS</a></p>
+                    <p class="footerBcontent">DESIGN AND DEVELOPED BY NOVA DESIGNS</p>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
 
     <!-- Back to top -->

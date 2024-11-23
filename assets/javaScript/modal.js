@@ -20,4 +20,37 @@ $(document).ready(function(){
     $(".editAddressMC").click(function(){
         $(this).closest(".addressEditMain").css({transform: "scale(0)"});
     });
+
+    {
+        $(".contactpaperopen").click(function(e){
+            e.preventDefault();
+            $(".contantpaperMain").css({transform: "scale(1)"});
+        });
+        $(".cPaperClose").click(function(e){
+            $(this).closest(".contantpaperMain").css({transform: "scale(0)"});
+        });
+    }
+
+    {
+        $('.otherServiceApplication').slick({
+          slidesToShow: 3, 
+          slidesToScroll: 1,
+          dots: false,
+          responsive: [
+              {
+                  breakpoint: 992,
+                  settings: {
+                      slidesToShow: 2
+                  }
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+              }
+          ]
+        });
+    
+      }
 });

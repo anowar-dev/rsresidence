@@ -26,4 +26,27 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).next(".success_massage").show();
     });
+
+    {
+        $('.testimonialSlider').slick({
+          slidesToShow: 3, 
+          slidesToScroll: 1,
+          dots: true,
+          responsive: [
+              {
+                  breakpoint: 992,
+                  settings: {
+                      slidesToShow: 2
+                  }
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+              }
+          ]
+        });
+    
+      }
 });

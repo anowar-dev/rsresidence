@@ -60,6 +60,15 @@
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
 
+
+    
+    .team_single:nth-child(odd){
+        border-right: 1px solid var(--primary-black);
+    }
+    .team_single:nth-last-child(2){
+        border-bottom: 0;
+    }
+
     /* width 922px for dashboard */
     .dashboardSitebar .nav-item .nav-link{
         width: 12rem;
@@ -222,8 +231,30 @@
     .dashboardSitebar .nav-item .nav-link{
         padding: 0.8rem 1rem;
     }
+
+    .fiiterMiddleSingle:nth-child(2){
+        margin-left: 0;
+    }
+    .fiiterMiddleSingle:last-child{
+        margin-left: 0;
+    }
+    .fiiterMiddleSingle{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
+@media (max-width: 800px) {
+    .contantPaperInner{
+        top: 0;
+        left: 0;
+        transform: unset;
+        width: 800px;
+        height: 100vh;
+        overflow: auto;
+        margin-right: auto;
+    }
+}
 /* ============= Max width 767px ============ */
 
 @media (max-width: 768px) {
@@ -298,12 +329,7 @@
         width: 100%;
         white-space: nowrap;
     }
-    .fiiterMiddleSingle:nth-child(2){
-        margin-left: 0;
-    }
-    .fiiterMiddleSingle:last-child{
-        margin-left: 0;
-    }
+    
 
     /* Conttact page for 768px */
     .sectionDevider {
