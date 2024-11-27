@@ -9,11 +9,25 @@
     .same .combo_planBody{
         height: 30.2rem;
     }
+    .addtionalPlanSbig.row4 .addituonalRight{
+        right: 0.5rem;
+        top: 4rem;
+    }
+    .additionalplanSingle{
+        height: 450px;
+    }
 }
 
 /* ========= Max width 1200px =========== */
 @media (max-width: 1200px) {
 
+    .additionalplanSingle{
+        height: 480px;
+    }
+    .addtionalPlanSbig .addituonalRight{
+        right: 0.5rem;
+        top: 4rem;
+    }
     .cart_left{
         width: 100%;
     }
@@ -60,8 +74,37 @@
 /* ======== Max width =========== 922px */
 @media (max-width: 992px) {
 
-
-    
+    .addtionalPlanSbig.row4 .addituonalRight{
+        right: -5rem;
+        top: 1rem;
+    }
+    .addtionalPlanSbig.row4{
+        margin-left: auto;
+    }
+    .addtionalPlanSbig .addituonalRight {
+        right: -4.5rem;
+        top: 1rem;
+    }
+    .addtionalPlanSbig.row2{
+        margin-left: auto;
+    }
+    .addtionalPlanSbig.row1{
+        margin-left: auto;
+    }
+    .additionalplanSingle{
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .product_data_inner.usme .paragraph:first-child{
+        margin-top: 1.5rem;
+    }
+    .sub_title.textCenterMatch{
+        width: 100%;
+    }
+    .team_single{
+        width: 100%;
+    }    
     .team_single:nth-child(odd){
         border-right: 1px solid var(--primary-black);
     }

@@ -271,7 +271,7 @@ img{
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -50%;
     display: none;
 }
 .desktop_mItem:hover .deskSubmenu{
@@ -2119,13 +2119,13 @@ td.position-relative.p-1 {
     padding-top: 1rem;
 }
 .mentorship_price b{
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--primary-black);
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
 }
 .mentorship_price span{
-    font-size: .95rem;
-    color: var(--paragraph-black);
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
     position: absolute;
     bottom: -.3rem;
     left: 50%;
@@ -2137,9 +2137,9 @@ td.position-relative.p-1 {
     font-size: 1.1rem;
     position: absolute;
     font-weight: 900;
-    top: 2rem;
+    top: 2.8rem;
     left: -.7rem;
-    color: var(--primary-black);
+    color: rgb(85, 85, 85);
 }
 .mentor_service_list{
     padding: 1rem;
@@ -2731,6 +2731,9 @@ td.position-relative.p-1 {
     border: none;
     margin-top: 1rem;
 }
+.checkout_right .small_btn:hover{
+    background: var(--primary-black);
+}
 .paymentMethodLabel span:hover{
     color: var(--primary-color);
 }
@@ -3200,6 +3203,18 @@ td.position-relative.p-1 {
     background-size: cover;
     background-position: center;
 }
+.topSliderSection.additional{
+    background: url('../images/servises/img001-1-11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.topSliderSection.usmes{
+    background: url('../images/servises/usmle-pass-fail.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .augthPageSlider{
     background: url('../images/TopSliderInner/img001-45-1.jpg');
     background-repeat: no-repeat;
@@ -3254,12 +3269,12 @@ td.position-relative.p-1 {
     background-size: cover;
     background-position: center;
 }
-.dashboardPageSlider{
+/* .dashboardPageSlider{
     background: url('../images/TopSliderInner/network.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 .topSliderSection.interview{
     background: url('../images/servises/tips-and-tricks.jpg');
     background-repeat: no-repeat;
@@ -3519,4 +3534,149 @@ td.position-relative.p-1 {
 }
 .interviewPlanSingleS .interTopPlan{
     height: 24rem;
+}
+.sub_title.additional{
+    margin-bottom: 5rem;
+}
+.sub_title.additional::after{
+    background: transparent;
+}
+.pdescription_main.additionalService{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 1.25%;
+}
+.additionalplanSingle{
+    width: 19%;
+    border: 1px solid var(--primary-black);
+    text-align: center;
+    height: 420px;
+}
+.additionalPlanStop{
+    padding: 1rem .5rem;
+    background: #999999;
+}
+.additionalplanTitles{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.additionalplanTitles .paragraph{
+    color: var(--white);
+    font-weight: 300;
+}
+.additionalPlanStop .paragraph{
+    color: var(--white);
+    margin-bottom: 0.2rem;
+}
+.additionalPlanSbottom .test{
+    padding: 2rem 1.5rem;
+    background: #ffffff;
+}
+.additionalplanSingle:first-child .additionalPlanSbottom .test{
+    background: #f5f5f5;
+}
+.test .addtionalPlanSbig{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(85, 85, 85, 1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addtionalPlanSbig.row1{
+    margin-left: 1.7rem;
+}
+.addtionalPlanSbig.row2{
+    margin-left: 1.7rem;
+}
+.addtionalPlanSbig.row4{
+    margin-left: 1.2rem;
+}
+.addtionalPlanSbig.row4 .addituonalRight{
+    right: -4.3rem;
+}
+.addtionalPlanSbig span{
+    position: absolute;
+    font-size: 1.4rem;
+}
+.addtionalPlanSbig .additionalLeft{
+    font-weight: 900;
+    left: -1rem;
+    top: .75rem;
+}
+.addtionalPlanSbig .addituonalRight{
+    font-weight: 400;
+    right: -4rem;
+   font-size: 1rem;
+    top: .75rem;
+}
+.product_data_inner.usme .paragraph{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    color: #000000;
+    letter-spacing: normal;
+}
+.product_data_inner.usme .paragraph:first-child{
+    margin-top: -2rem;
+}
+.sub_title3.usme{
+    background: transparent;
+    color: var(--white);
+}
+.product_description_section.usme{
+    background: var(--primary-color);
+}
+.pdescriptionInnerS.usme .pdescriptionInnerBtn{
+    background: var(--white);
+    color: var(--paragraph-black);
+}
+.pdescriptionInnerS.usme .pdescriptionInnerBtn:hover{
+    background: var(--primary-black);
+    color: var(--white);
+}
+.container.additional{
+   padding: 0;
+}
+.bgLightSlider.singlepage.myAcount{
+    background: rgba(0, 0, 0, .2);
+}
+.googlecapcha{
+    background: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    width: fit-content;
+    margin-right: auto;
+    border-radius: .2rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    margin-bottom: 2rem;
+}
+.googlecapcha input{
+    width: .8rem;
+    margin-right: -.5rem;
+}
+.googleInon img{
+    width: 3.5rem;
+}
+.googlecapcha label{
+    cursor: pointer;
+}
+.privacy a{
+    font-size: 0.6rem;
+    color: var(--light-black);
+}
+.privacy a:hover{
+    text-decoration: underline;
+}
+.cSocialDiv .sub_title::after{
+    background: transparent;
 }
