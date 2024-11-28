@@ -51,17 +51,15 @@ img{
     transition: .4s;
     position: relative;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
-.sub_title::after{
-    position: absolute;
-    content: '';
-    top: 3.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+.aftercolor{
     width: 8rem;
     height: 1px;
     background: var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
 }
 .sub_title2{
     font-size: var(--subTitle_size);
@@ -3380,7 +3378,8 @@ td.position-relative.p-1 {
     padding: 1rem;
 }
 .otherServiceApplication .slick-arrow{
-    margin-top: -5rem;
+    margin-top: -8rem;
+    z-index: 999;
 }
 .primary_btn.smallBtn{
     padding: 0.5rem 1rem;
@@ -3678,5 +3677,8 @@ td.position-relative.p-1 {
     text-decoration: underline;
 }
 .cSocialDiv .sub_title::after{
+    background: transparent;
+}
+.sub_title.new::after{
     background: transparent;
 }

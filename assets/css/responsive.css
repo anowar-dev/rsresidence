@@ -223,18 +223,21 @@
     .achievementRight, .achievementLeft{
         width: 100%;
     }
+    .achievementRight{
+        display: none;
+    }
     .achievementIsingle{
         text-align: center;
     }
     .contactSection .contactMain{
         flex-direction: column-reverse;
+        height: fit-content;
     }
     .contactMain .contactLeft{
-        width: 100%;
+        display: none;
     }
     .contactRight{
         width: 100%;
-        margin-bottom: 5rem;
         text-align: center;
     }
     .footertop{
@@ -285,6 +288,13 @@
         width: 100%;
         margin-bottom: 2rem;
     }
+    .interviewPlanSingleS{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .pdescription_main.interviewPlan{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 800px) {
@@ -301,6 +311,15 @@
 /* ============= Max width 767px ============ */
 
 @media (max-width: 768px) {
+
+    
+   
+    .team_single{
+        text-align: center;
+    }
+    .team_single .team_top{
+        flex-direction: column;
+    }
     .dashboard_main{
         flex-direction: column;
         row-gap: 2rem;
@@ -515,6 +534,10 @@
 
 /* Max width 520px */
 @media (max-width: 520px) {
+    .serviseMainImgDiv{
+        width: 110px;
+        height: 110px;
+    }
     .checkout_right, .cart_total_inner, .password_up{
         padding: 1.5rem .9rem;
     }
