@@ -43,118 +43,112 @@ $(window).on("scroll", function() {
 
 $(document).ready(function() {
 
-  // Initialize active class based on saved index
-  $('.desktopMlink').removeClass('active');
-  let activeIndex = localStorage.getItem('activeIndex');
-  if (activeIndex !== null) {
-    $('.desktopMlink').eq(activeIndex).addClass('active');
-  }
 
-  // Main menu link click event
-  $('.desktopMlink').click(function() {
-    $('.desktopMlink').removeClass('active'); // Remove active class from all main menu links
-    $(this).addClass('active'); // Add active class to clicked main menu link
-    let index = $('.desktopMlink').index(this);
-    localStorage.setItem('activeIndex', index); // Store the index in localStorage
-  });
+  // {
+  //   // Remove all active classes initially
+  //   $('.desktopMlink').removeClass('active');
+    
+  //   // Get the current page URL path (e.g., "mentorship.html")
+  //   const currentPath = window.location.pathname.split('/').pop();
 
-  // Sub-menu and sub-submenu link click event
-  $('.desktoplink, .desktopSMlink, .deskSubLink2').click(function() {
-    $('.desktopMlink').removeClass('active'); // Remove active from all main menu links
-    let parentMenuItem = $(this).closest('.desktop_mItem').find('> .desktopMlink');
-    parentMenuItem.addClass('active'); // Add active to the parent main menu link
-    let index = $('.desktopMlink').index(parentMenuItem);
-    localStorage.setItem('activeIndex', index); // Store parent menu index in localStorage
-  });
+  //   // Check if the current URL matches a main menu item or a submenu item
+  //   const matchingMainMenuItem = $(`.desktopMlink[href="${currentPath}"]`);
+  //   const matchingSubMenuItem = $(`.deskSubLink2[href="${currentPath}"]`);
 
-  // Footer link click event
-  $('.footerLinks').click(function() {
-    let targetHref = $(this).attr('href'); // Get the href of the clicked footer link
-    let isMatchFound = false; // Flag to check for matching header link
+  //   // If it's a main menu item, add the active class to that
+  //   if (matchingMainMenuItem.length) {
+  //       matchingMainMenuItem.addClass('active');
+  //   } 
+  //   // If it's a submenu item, find its parent main menu and add active to the main menu
+  //   else if (matchingSubMenuItem.length) {
+  //       matchingSubMenuItem.closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+  //   }
+  //   else {
+  //       // Default to Home menu if no match
+  //       $('.desktopMlink[href="index.html"]').addClass('active');
+  //   }
 
-    // Find corresponding header link based on href
-    $('.desktopMlink').each(function(index) {
-      if ($(this).attr('href') === targetHref) {
-        $('.desktopMlink').removeClass('active'); // Remove active from all header links
-        $('.footerLinks').removeClass('active'); // Remove active from all footer links
-        $(this).addClass('active'); // Add active to matched header link
-        $(this).closest('.footerLinks').addClass('active'); // Add active to footer link
-        localStorage.setItem('activeIndex', index); // Store index in localStorage
-        isMatchFound = true; // Set flag if match found
-        return false; // Break loop
-      }
-    });
+  //   // Event handler for main and submenu links
+  //   $('.desktopMlink, .deskSubLink2').on('click', function () {
+  //       // Remove active class from all menu links
+  //       $('.desktopMlink').removeClass('active');
 
-    // If no matching header link is found, clear all active classes and localStorage
-    if (!isMatchFound) {
-      $('.desktopMlink').removeClass('active'); // Remove active from all header links
-      $('.footerLinks').removeClass('active'); // Remove active from all footer links
-      $(this).addClass('active'); // Add active to only the clicked footer link
-      localStorage.removeItem('activeIndex'); // Clear localStorage
+  //       // If it's a submenu link, add active class to the parent menu
+  //       if ($(this).hasClass('deskSubLink2')) {
+  //           $(this).closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+  //       }
+  //       // For main menu links
+  //       else {
+  //           $(this).addClass('active');
+  //       }
+  //   });
+  // }
+
+  {
+    $('.desktopMlink').removeClass('active');
+    $('.deskSubLink2').removeClass('active'); // Ensure submenu links also don't have the 'active' class
+    $('.desktopSMlink').removeClass('active'); // Ensure submenu links also don't have the 'active' class
+
+    // Get the current page URL path (e.g., "mentorship.html")
+    const currentPath = window.location.pathname.split('/').pop();
+
+    // Check if the current URL matches a main menu item or a submenu item
+    const matchingMainMenuItem = $(`.desktopMlink[href="${currentPath}"]`);
+    const matchingSubMenuItem = $(`.deskSubLink2[href="${currentPath}"]`);
+    const matchingSubMenuItem2 = $(`.desktopSMlink[href="${currentPath}"]`);
+
+    // If it's a main menu item, add the active class to that
+    if (matchingMainMenuItem.length) {
+        matchingMainMenuItem.addClass('active');
     }
-  });
+    // If it's a submenu item, find its parent main menu and add active to the main menu
+    else if (matchingSubMenuItem.length) {
+        matchingSubMenuItem.closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+    }
+    else if (matchingSubMenuItem2.length) {
+      matchingSubMenuItem2.closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+  }
+    else {
+        // Default to Home menu if no match
+        $('.desktopMlink[href="index.html"]').addClass('active');
+    }
 
-  // Initialize active class based on saved index
-// $('.desktopMlink').removeClass('active');
-// $('.footerLinks').removeClass('active'); // Remove active from all footer links
-// let activeIndex = localStorage.getItem('activeIndex');
-// if (activeIndex !== null) {
-//   $('.desktopMlink').eq(activeIndex).addClass('active');
-//   syncFooterActiveLink(activeIndex); // Sync active footer link
-// } else {
-//   $('.desktopMlink').eq(0).addClass('active'); // Default to Home
-//   $('.footerLinks').eq(0).addClass('active');
-// }
+    // Event handler for main and submenu links
+    $('.desktopMlink, .deskSubLink2, .deskSubItem').on('click', function () {
+        // Remove active class from all menu links
+        $('.desktopMlink').removeClass('active');
+        $('.deskSubLink2').removeClass('active');
+        $('.deskSubItem').removeClass('active');
 
-// // Main menu link click event
-// $('.desktopMlink').click(function() {
-//   $('.desktopMlink').removeClass('active'); // Remove active class from all main menu links
-//   $(this).addClass('active'); // Add active class to clicked main menu link
-//   let index = $('.desktopMlink').index(this);
-//   localStorage.setItem('activeIndex', index); // Store the index in localStorage
-//   syncFooterActiveLink(index); // Sync active footer link
-// });
+        // If it's a submenu link, add active class to the parent menu
+        if ($(this).hasClass('deskSubLink2')) {
+            $(this).addClass('active');
+            $(this).closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+        }
+        else if ($(this).hasClass('deskSubItem')) {
+          $(this).addClass('active');
+          $(this).closest('.desktop_mItem').find('.desktopMlink').addClass('active');
+      }
+        // For main menu links
+        else {
+            $(this).addClass('active');
+        }
+    });
+  }
+  {
+    $('.footerLinks').removeClass('active');
 
-// // Sub-menu and sub-submenu link click event
-// $('.desktoplink, .desktopSMlink, .deskSubLink2').click(function() {
-//   $('.desktopMlink').removeClass('active'); // Remove active from all main menu links
-//   let parentMenuItem = $(this).closest('.desktop_mItem').find('> .desktopMlink');
-//   parentMenuItem.addClass('active'); // Add active to the parent main menu link
-//   let index = $('.desktopMlink').index(parentMenuItem);
-//   localStorage.setItem('activeIndex', index); // Store parent menu index in localStorage
-//   syncFooterActiveLink(index); // Sync active footer link
-// });
+    // Get the current page URL path (e.g., "mentorship.html")
+    const currentPath = window.location.pathname.split('/').pop();
 
-// // Footer link click event
-// $('.footerLinks').click(function() {
-//   let targetHref = $(this).attr('href'); // Get the href of the clicked footer link
+    // Check if the current URL matches any footer link
+    const matchingFooterLink = $(`.footerLinks[href="${currentPath}"]`);
 
-//   // Find corresponding header link based on href and set active class
-//   $('.desktopMlink').each(function(index) {
-//     if ($(this).attr('href') === targetHref) {
-//       $('.desktopMlink').removeClass('active'); // Remove active from all header links
-//       $(this).addClass('active'); // Add active to matched header link
-//       localStorage.setItem('activeIndex', index); // Store index in localStorage
-//       syncFooterActiveLink(index); // Sync active footer link
-//       return false; // Break out of each loop once matched
-//     }
-//   });
-// });
-
-// // Helper function to synchronize footer active link
-// function syncFooterActiveLink(index) {
-//   $('.footerLinks').removeClass('active'); // Remove active from all footer links
-//   $('.footerLinks').each(function() {
-//     if ($(this).attr('href') === $('.desktopMlink').eq(index).attr('href')) {
-//       $(this).addClass('active'); // Add active to matching footer link
-//       return false; // Break out once matched
-//     }
-//   });
-// }
-
-
-  
-
+    // If a matching link is found, add the active class
+    if (matchingFooterLink.length) {
+        matchingFooterLink.addClass('active');
+    }
+  }
 
   // Mobile sub-menu toggle
   $(".MobileSMlink").click(function() {
@@ -279,56 +273,6 @@ $(document).ready(function() {
 
 
   // Home calender
-
-  // {
-  //   $('#homeCalender').bsCalendar({
-  //     locale: 'en',
-  //     url: null,
-  //     width: 'fit',
-  //     icons: {
-  //       prev: 'fa-solid fa-arrow-left fa-fw',
-  //       next: 'fa-solid fa-arrow-right fa-fw',
-  //       eventEdit: 'fa-solid fa-edit fa-fw',
-  //       eventRemove: 'fa-solid fa-trash fa-fw'
-  //     },
-  //     showTodayHeader: false,
-  //     showEventEditButton: true,
-  //     showEventRemoveButton: true,
-  //     showPopover: false
-  //   });
-
-  //   $(".timeBtn").click(function(){
-  //     $(".timeBoxSingle").removeClass("next");
-  //     $(this).closest(".timeBoxSingle").addClass("next");
-  //   });
-
-  //   $(".timeNextBtn").click(function(){
-  //     $(this).closest(".consultationCalenderDiv").hide();
-  //     $(".appointmentMain").show();
-  //   });
-  //   $("td.position-relative.p-1").click(function(){
-  //     $(".calenderOverlay").hide();
-  //   });
-  //   $("td.position-relative.p-1").css({cursor: "pointer"});
-  //   $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-bg-primary");
-  //   $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").click(function(){
-  //     $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("bg-primary");
-  //     $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-white");
-  //     $(".js-cell-inner.justify-content-center.align-items-center.rounded-circle").removeClass("text-white");
-  //     $(this).addClass("bg-primary");
-  //     $(this).addClass("text-white");
-  //     $(this).removeClass("border-secondary");
-  //   });
-    
-
-  //   $(".appointmentSubmitBtn").click(function(e){
-  //     e.preventDefault();
-  //     $(".appointmentMain").hide();
-  //     $(".consultConfirm_main").show();
-  //   });
-
-  // }
-
 {
 
 
