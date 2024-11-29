@@ -1552,17 +1552,16 @@ td.position-relative.p-1 {
 .fiiterMiddleSingle{
     width: 24%;
 }
-.fiiterMiddleSingle:nth-child(2){
-    margin-left: 2rem;
-}
 .fiiterMiddleSingle img{
     width: 14rem;
 }
-.fiiterMiddleSingle:last-child{
-    width: fit-content;
-    margin-left: auto;
-}
 
+.fiiterMiddleSingle:first-child{
+    width: 25%;
+}
+.fiiterMiddleSingle:nth-child(2){
+    width: 23%;
+}
 .footerTitle{
     font-size: 1.2rem;
     font-weight: 600;
@@ -1595,9 +1594,7 @@ td.position-relative.p-1 {
     color: var(--hover-color);
     transition: .4s ease;
 }
-.footerBcontent a:hover{
-    color: var(--primary-color);
-}
+
 
 /* footerSection section end */
 

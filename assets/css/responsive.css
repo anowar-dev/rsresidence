@@ -285,8 +285,14 @@
         margin-left: 0;
     }
     .fiiterMiddleSingle{
-        width: 100%;
+        width: 48%;
         margin-bottom: 2rem;
+    }
+    .fiiterMiddleSingle:first-child{
+        width: 48%;
+    }
+    .fiiterMiddleSingle:nth-child(2){
+        width: 48%;
     }
     .interviewPlanSingleS{
         width: 100%;
@@ -386,10 +392,33 @@
     .footerMiddle{
         flex-direction: column;
         row-gap: 2rem;
+        align-items: center;
     }
     .footerLinks{
         width: 100%;
         white-space: nowrap;
+    }
+    .fiiterMiddleSingle:first-child{
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fiiterMiddleSingle:nth-child(2){
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fiiterMiddleSingle{
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fiiterMiddleSingle:last-child{
+        margin-left: auto;
+        margin-right: auto;
     }
     
 
