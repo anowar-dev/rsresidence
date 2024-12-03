@@ -1591,7 +1591,7 @@ td.position-relative.p-1 {
     margin-right: auto;
 }
 .footerBcontent a{
-    color: var(--hover-color);
+    color: #008000;
     transition: .4s ease;
 }
 
@@ -3452,7 +3452,7 @@ td.position-relative.p-1 {
 }
 .interviewPlanSingleS{
     width: 32%;
-    border: 1px solid var(--primary-black);
+    /* border: 1px solid var(--primary-black); */
 }
 .interheaderBlack{
     background: #555555;
@@ -3530,6 +3530,8 @@ td.position-relative.p-1 {
 }
 .interviewPlanSingleS .interTopPlan{
     height: 24rem;
+    border: 1px solid black;
+    margin-bottom: 1.2rem;
 }
 .sub_title.additional{
     margin-bottom: 5rem;
